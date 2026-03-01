@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-commissioner: "Commissioner", sans-serif;
+    /* --font-alegreya: "Alegreya Sans", sans-serif; */
+    /* --font-cormorant: "Cormorant Upright", serif; */
+    --font-roboto: "Roboto", sans-serif;
+
+    /* base color */
+    --background: #ffffff;          
+    --foreground: #36251e;
+    --primary-text: #000000;          
+    
+    --card: #ffffff;                 
+    --card-foreground: #36251e;      
+    
+    --popover: #ffffff;              
+    --popover-foreground: #36251e;   
+    
+    --primary: #36251e;              
+    --primary-foreground: #ffffff;   
+    
+    --secondary: #f0e87a;            
+    --secondary-foreground: #36251e; 
+    
+    --muted: #f0f3f5;                
+    --muted-foreground: #362e2d;     
+    
+    --accent: #B38B2D;               
+    --accent-foreground: #ffffff;    
+    
+    --destructive: #ff4d4d;          
+    --destructive-foreground: #ffffff; 
+    
+    --border: #e6e6e6;               
+    --input: #e6e6e6;                
+    --ring: #36251e;      
+    --gradient-hero: #3b3945;
+    --gradient-accent: linear-gradient(90deg, #f0e87a 0%, #f5e8a4 100%);
+
+    --shadow-soft: 0 4px 20px -2px hsl(218 35% 15% / 0.08);
+    --shadow-medium: 0 8px 30px -4px hsl(218 35% 15% / 0.12);
+    --shadow-strong: 0 12px 40px -6px hsl(218 35% 15% / 0.18);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+
+    body {
+        background-color: var(--background);
+        color: var(--foreground);
+        font-family: var(--font-roboto);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* h1, h2, h3 {
+    font-family: var(--font-cormorant);
+    }
+
+    h4, h5, h6 {
+        font-family: var(--font-alegreya);
+    } */
+
+    
+} 
