@@ -31,6 +31,10 @@ Route::get('/case-studies', function () {
     return view('pages.case-studies');
 })->name('case-studies');
 
+Route::get('/testimonials', function () {
+    return view('pages.testimonials');
+})->name('testimonials');
+
 
 Route::prefix('/services')->group(function () {
     Route::get('/labour-law', function () { return view('pages.services.labour'); })->name('services.labour');

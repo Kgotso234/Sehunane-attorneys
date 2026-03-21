@@ -1,5 +1,0 @@
-<svg class="h-5 w-5 text-destructive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
-  <path d="M12 9v4"/>
-  <path d="M12 17h.01"/>
-</svg><?php /**PATH C:\xampp\htdocs\public_html\storage\framework\views/2f72ae9b186c848416e8f3cc3ce79db7.blade.php ENDPATH**/ ?>

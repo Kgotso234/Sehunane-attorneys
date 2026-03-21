@@ -1,0 +1,62 @@
+/* Ensure the background itself moves */
+.living-bg {
+    background: linear-gradient(-45deg, #020617, #0f172a, #1a1a2e, #020617);
+    background-size: 400% 400%;
+    animation: flowBg 15s ease infinite;
+    position: relative;
+}
+
+@keyframes flowBg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card image animation & Background Floating */
+@keyframes slowFloat {
+    0% { background-position: 50% 50%; transform: scale(1.05); }
+    50% { background-position: 52% 48%; transform: scale(1.1); }
+    100% { background-position: 50% 50%; transform: scale(1.05); }
+}
+
+.group:hover div[style*="background-image"] {
+    animation: slowFloat 6s ease-in-out infinite;
+    filter: grayscale(0);
+}
+
+.heading-line {
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    display: block;
+    /* Margin top is now 4px to stay close to the text */
+    margin: 4px auto 0; 
+    border-radius: 2px;
+    /* Updated animation name and duration */
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { 
+        width: 60px; 
+        background-color: var(--accent);
+        filter: brightness(1);
+        box-shadow: 0 0 0px transparent;
+    }
+    50% { 
+        width: 110px; 
+        /* Shifts to a slightly brighter/glowing version of the accent */
+        background-color: #d4af37; 
+        filter: brightness(1.2);
+        box-shadow: 0 0 10px rgba(179, 139, 45, 0.4);
+    }
+}
+/* Slowly zooms the background image for a cinematic feel */
+.bg-zoom-slow {
+    animation: slowZoom 20s linear infinite alternate;
+}
+
+@keyframes slowZoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}

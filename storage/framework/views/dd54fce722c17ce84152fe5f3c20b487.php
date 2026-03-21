@@ -2,6 +2,9 @@
 <?php $__env->startSection('title', 'About Sehunane Attorneys Inc | Leading Law Firm in Kempton Park'); ?>
 <?php $__env->startSection('meta_description', 'Learn about Sehunane Attorneys Inc, a multi-disciplinary law firm in Kempton Park. Led by Rueben Masilo Sehunane, we provide expert legal advocacy in diverse fields.'); ?>
 
+<?php $__env->startPush('styles'); ?>
+    <link rel="stylesheet" href="<?php echo e(asset('css/style.css')); ?>">
+<?php $__env->stopPush(); ?>
 <?php $__env->startSection('content'); ?>
 
     <div class="min-h-screen">
@@ -12,56 +15,72 @@
                 <div class="absolute inset-0 bg-[#36251e] opacity-70"></div>
             </div>
             <div class="container mx-auto px-4 relative z-10">
-                <h1 class="text-center mt-12 text-3xl md:text-4xl font-bold text-[var(--primary-foreground)] mb-6" data-aos="fade-down" data-aos-duration="1000">
+                
+                
+                <h1 class="heading text-center mt-12 text-3xl md:text-4xl font-bold text-[var(--primary-foreground)] mb-6">
                     About Us
                 </h1>
-                <ul class="flex items-center justify-center space-x-4 mt-4">
-                    <li class="text-[var(--primary-foreground)] font-bold text-[16px] cursor-pointer">
-                        Home
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-3 -rotate-90" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z" clip-rule="evenodd"></path>
-                        </svg>
-                    </li>
-                    <li class="text-[var(--primary-foreground)] font-bold text-[16px]">
-                        About Us
-                    </li>
-                </ul>
             </div>
         </section>
         
-        <section class="py-20 overflow-hidden">
+       <section class="py-20 bg-white overflow-hidden">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
                     
-                    <h2 class="text-2xl md:text-4xl font-bold mb-12 text-center text-[var(--primary)]" 
-                        data-aos="fade-down">
-                        Our Story
-                    </h2>
+                    <div class="text-center mb-20">
+                        <h2 class="heading text-2xl md:text-4xl font-bold text-black">
+                            Our Story
+                        </h2>
+                        <div class="heading-line"></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div class="relative" data-aos="fade-right">
+                            <div class="absolute -top-6 -left-6 w-64 h-64 border-l-8 border-t-8 border-[#bb942f]/20 rounded-tl-3xl hidden md:block"></div>
+                            
+                            <div class="relative z-10 group">
+                                <div class="overflow-hidden rounded-2xl shadow-2xl">
+                                    <img class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
+                                        src="<?php echo e(asset('images/download.jpg')); ?>" 
+                                        alt="Sehunane Attorneys Office">
+                                </div>
 
-                        
-                        <div class="relative" data-aos="fade-right" data-aos-duration="1000">
-                            <div class="relative z-10 bg-gray-200 shadow-2xl rounded-lg max-w-[400px] mx-auto md:mx-0">
-                                <img class="w-full h-96 object-cover transition-all duration-500 rounded-lg"
-                                    src="<?php echo e(asset('images/download.jpg')); ?>" 
-                                    alt="office image">
+                                <div class="absolute -bottom-10 -right-6 bg-[#36251e] p-8 rounded-xl shadow-xl border-b-4 border-[#bb942f] hidden md:block" data-aos="zoom-in" data-aos-delay="400">
+                                    <span class="block text-4xl font-bold text-[#bb942f]">14+</span>
+                                    <span class="text-white text-sm uppercase tracking-widest font-semibold">Years of <br> Excellence</span>
+                                </div>
                             </div>
                         </div>
 
-                        
-                        <div class="space-y-6 text-base text-[var(--muted-foreground)] leading-relaxed" data-aos="fade-left">
-                            <p data-aos="fade-right" data-aos-delay="200">
-                                Founded in 2012, Sehunane Attorneys Inc has grown from a small practice into a reputable law firm known for its commitment to excellence and client satisfaction. Our founders envisioned a firm that not only provides top-notch legal services but also fosters strong relationships with clients based on trust and integrity.
-                            </p>
-                            <p data-aos="fade-left" data-aos-delay="400">
-                                Over the years, we have expanded our expertise to cover a wide range of legal areas, including corporate law, family law, criminal defense, real estate law, and more. Our attorneys bring diverse backgrounds and experiences, allowing us to approach each case with a unique perspective and tailored strategies.
-                            </p>
-                            <p data-aos="fade-up" data-aos-delay="600">
-                                At Sehunane Attorneys Inc, we believe that every client deserves personalized attention and dedicated representation. We take the time to understand our clients' needs and goals, ensuring that we provide solutions that align with their best interests.
-                            </p>
+                        <div class="space-y-8" data-aos="fade-left">
+                            <div class="inline-block bg-[#bb942f]/10 text-[#bb942f] px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">
+                                Since 2012
+                            </div>
+
+                            <div class="space-y-6 text-lg text-slate-700 leading-relaxed">
+                                <p class="font-medium text-xl text-black">
+                                    Founded in 2012, Sehunane Attorneys Inc has grown from a local practice into a reputable law firm known for commitment and excellence.
+                                </p>
+                                
+                                <p>
+                                    Over the years, we have expanded our expertise to cover a wide range of legal areas, including corporate, family, and criminal law. Our attorneys bring diverse experiences, allowing us to approach each case with a unique, tailored strategy.
+                                </p>
+                                
+                                <p>
+                                    At Sehunane Attorneys Inc, we believe every client deserves personalized attention. We ensure that our solutions align perfectly with your best interests.
+                                </p>
+                            </div>
+
+                            <div class="pt-6 border-t border-gray-100 flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-[#bb942f]/20 flex items-center justify-center">
+                                    <i data-lucide="award" class="text-[#bb942f]"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-black">Excellence in Justice</p>
+                                    <p class="text-sm text-slate-500">Sehunane Attorneys Leadership Team</p>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -69,201 +88,251 @@
             </div>
         </section>
         
-        
-        <section class="relative py-20 bg-cover bg-center"
-                style="background-image: url('<?php echo e(asset('images/office picture.jpg')); ?>');">
-
-            <!-- Dark Overlay -->
-            <div class="absolute inset-0 bg-black/40"></div>
+        <section class="relative py-24 overflow-hidden bg-[#212529]">
+            <div class="absolute inset-0 z-0">
+                <img src="<?php echo e(asset('images/office picture.jpg')); ?>" 
+                    class="w-full h-full object-cover opacity-30 grayscale bg-zoom-slow" 
+                    alt="Sehunane Office Background">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#212529]/90 via-[#212529]/70 to-[#212529]/90"></div>
+            </div>
 
             <div class="relative z-10 container mx-auto px-4">
-                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     
-                    <div class="shadow-lg rounded-lg border border-[var(--border)] bg-white/30 backdrop-blur-sm transform transition-transform hover:-translate-y-2 duration-300"
-                        data-aos="zoom-in-right" data-aos-delay="200">
-                        <div class="p-8">
-                            <h2 class="text-base font-bold text-black/90 mb-4">Mission</h2>
-                            <p class="text-xs text-black/90 leading-relaxed">
-                                Our mission at Sehunane Attorneys Inc is to provide exceptional legal services with integrity, professionalism, and a client-centered approach. We are dedicated to achieving the best possible outcomes for our clients while upholding the highest ethical standards.
-                            </p>
+                    <div class="group relative p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#bb942f]/50 transition-all duration-500 hover:-translate-y-3"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="mb-6 w-14 h-14 bg-[#bb942f] rounded-lg flex items-center justify-center transition-colors group-hover:bg-white">
+                            <i data-lucide="target" class="text-black w-8 h-8"></i>
                         </div>
+                        <h3 class="heading text-2xl font-bold text-white mb-4">Our Mission</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm">
+                            To provide exceptional legal services with integrity, professionalism, and a client-centered approach. We are dedicated to achieving the best possible outcomes while upholding the highest ethical standards.
+                        </p>
                     </div>
 
                     
-                    <div class="shadow-lg rounded-lg border border-[var(--border)] bg-white/30 backdrop-blur-sm transform transition-transform hover:-translate-y-2 duration-300"
-                        data-aos="zoom-in-left" data-aos-delay="400">
-                        <div class="p-8">
-                            <h2 class="text-base font-bold text-black/90 mb-4">Our Vision</h2>
-                            <p class="text-xs text-black/90 leading-relaxed">
-                                Our vision is to be recognized as a leading law firm known for excellence in legal services, innovation, and client satisfaction. We strive to build lasting relationships with our clients and the community, making a positive impact through our work.
-                            </p>
+                    <div class="group relative p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#bb942f]/50 transition-all duration-500 hover:-translate-y-3"
+                        data-aos="fade-up" data-aos-delay="400">
+                        <div class="mb-6 w-14 h-14 bg-[#bb942f] rounded-lg flex items-center justify-center transition-colors group-hover:bg-white">
+                            <i data-lucide="eye" class="text-black w-8 h-8"></i>
                         </div>
+                        <h3 class="heading text-2xl font-bold text-white mb-4">Our Vision</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm">
+                            To be recognized as a leading law firm known for excellence, innovation, and client satisfaction. We strive to build lasting relationships that make a positive impact through our legal work.
+                        </p>
                     </div>
+
                     
-                    <div class="shadow-lg rounded-lg border border-[var(--border)] bg-white/30 backdrop-blur-sm transform transition-transform hover:-translate-y-2 duration-300"
-                        data-aos="zoom-in-left" data-aos-delay="400">
-                        <div class="p-8">
-                            <h2 class="text-base font-bold text-black/90 mb-4">Our Value</h2>
-                            <p class="text-xs text-black/90 leading-relaxed">
-                                At Sehunane Attorneys Inc, we are guided by integrity, accountability, and professionalism. We prioritise our clients’ needs with personalised attention, uphold the highest ethical standards, and pursue excellence in every matter to achieve meaningful, results-driven outcomes.
-                            </p>
+                    <div class="group relative p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#bb942f]/50 transition-all duration-500 hover:-translate-y-3"
+                        data-aos="fade-up" data-aos-delay="600">
+                        <div class="mb-6 w-14 h-14 bg-[#bb942f] rounded-lg flex items-center justify-center transition-colors group-hover:bg-white">
+                            <i data-lucide="scale" class="text-black w-8 h-8"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="py-20 bg-[var(--muted)]">
-            <div class="max-w-5xl mx-auto px-6">
-
-                <!-- Heading -->
-                <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900">
-                        Meet Our Team
-                    </h2>
-                    <p class="text-lg text-slate-600 mt-4 leading-relaxed">
-                        Meet our team of professionals dedicated to serving your legal needs.
-                    </p>
-                </div>
-
-                <!-- Team Grid -->
-                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-
-                    <!-- Card -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
-                        <div class="w-full h-[480px] bg-gray-100">
-                            <img src="<?php echo e(asset('images/profile.jpg')); ?>"
-                                alt="Kgotsofatso Pholotho"
-                                class="w-full h-full object-cover object-top">
-                        </div>
-                        <div class="p-6 text-center">
-                            <h4 class="text-xl font-semibold text-slate-900">
-                                Kgotsofatso Pholotho
-                            </h4>
-                            <p class="text-base text-slate-600 mt-2">
-                                Director & Attorney
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
-                        <div class="w-full h-[480px] bg-gray-100">
-                            <img src="<?php echo e(asset('images/profile.jpg')); ?>"
-                                alt="Team Member"
-                                class="w-full h-full object-cover object-top">
-                        </div>
-                        <div class="p-6 text-center">
-                            <h4 class="text-xl font-semibold text-slate-900">
-                                Kgotsofatso Pholotho
-                            </h4>
-                            <p class="text-base text-slate-600 mt-2">
-                                Paralegal
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
-                        <div class="w-full h-[480px] bg-gray-100">
-                            <img src="<?php echo e(asset('images/profile.jpg')); ?>"
-                                alt="Team Member"
-                                class="w-full h-full object-cover object-top">
-                        </div>
-                        <div class="p-6 text-center">
-                            <h4 class="text-xl font-semibold text-slate-900">
-                                Kgotsofatso Pholotho
-                            </h4>
-                            <p class="text-base text-slate-600 mt-2">
-                                Office Manager
-                            </p>
-                        </div>
+                        <h3 class="heading text-2xl font-bold text-white mb-4">Our Values</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm">
+                            Guided by integrity, accountability, and professionalism. We prioritize our clients’ needs with personalized attention and pursue excellence in every legal matter to achieve results-driven outcomes.
+                        </p>
                     </div>
 
                 </div>
             </div>
-        </div>
-        
-                 
-        
-        <section class="py-20 bg-white relative overflow-hidden">
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto  text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-black mb-12" 
-                        data-aos="fade-up">
-                        Why Choose Sehunane Attorneys Inc?
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-black">
+        </section>
+        <section class="py-15 bg-white overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    
+                    <div class="text-center mb-12">
+                        <h2 class="heading text-2xl md:text-4xl font-bold text-black">
+                            Leadership & Expertise
+                        </h2>
                         
-                        <div data-aos="fade-up" data-aos-delay="200">
-                            <div class="text-5xl font-bold text-black mb-2">
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        
+                        <div class="lg:col-span-5 relative" data-aos="fade-right">
+                            <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#bb942f]/10 rounded-full z-0"></div>
+                            
+                            <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-b-8 border-[#bb942f]">
+                                <img src="<?php echo e(asset('images/c00c80467b323cdb9b6c5415aeb30084.png')); ?>" 
+                                    alt="Director Profile" 
+                                    class="w-full h-[550px] object-cover object-top">
+                                
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-6 lg:hidden">
+                                    <h3 class="text-white text-xl font-bold">Reuben Sehunane</h3>
+                                    <p class="text-[#bb942f] text-sm uppercase tracking-widest">Director & Lead Attorney</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+                            <div class="hidden lg:block">
+                                <h3 class="heading text-3xl font-bold text-black mb-2">Reuben Sehunane</h3>
+                                <p class="text-[#bb942f] font-bold uppercase tracking-[0.2em] text-sm">Director & Founder</p>
+                            </div>
+
+                            <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                                <p class="italic text-xl text-black font-light">
+                                    "Our firm was built on the belief that everyone deserves high-caliber legal representation that is both accessible and deeply personal."
+                                </p>
+                                <p>
+                                    As the Director of Sehunane Attorneys Inc, Reuben brings years of specialized legal experience in navigating complex litigations and advisory matters. His leadership is defined by a commitment to integrity and a results-driven approach.
+                                </p>
+                                <p>
+                                    Under his guidance, the firm has successfully represented hundreds of clients in Kempton Park and beyond, ensuring that every case receives the meticulous attention it deserves.
+                                </p>
+                            </div>
+
+                            <div class="pt-5 grid grid-cols-2 gap-4">
+                                <div class="flex items-center gap-3 text-slate-800">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#bb942f]"></i>
+                                    <span class="font-semibold">Senior Litigator</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-800">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#bb942f]"></i>
+                                    <span class="font-semibold">Legal Advisor</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-800">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#bb942f]"></i>
+                                    <span class="font-semibold">Compliance Expert</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-slate-800">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#bb942f]"></i>
+                                    <span class="font-semibold">Strategic Negotiator</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-6">
+                                <a href="mailto:info@sehunaneattorneys.co.za" class="inline-flex items-center gap-2 text-black font-bold border-b-2 border-[#bb942f] pb-1 hover:text-[#bb942f] transition-colors">
+                                    Contact the Director
+                                    <i data-lucide="mail" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <section class="relative py-20 overflow-hidden  bg-[#36251e]">
+            <div class="absolute inset-0 z-0">
+                <img src="<?php echo e(asset('images/office picture.jpg')); ?>" 
+                    class="w-full h-full object-cover opacity-10 grayscale bg-zoom-slow" 
+                    alt="Background">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#212529] via-[#212529]/80 to-transparent"></div>
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h2 class="heading text-2xl md:text-4xl font-bold text-white mb-10">
+                    Our Impact in Numbers
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    
+                    <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="relative w-40 h-40 mb-6">
+                            <svg class="w-full h-full -rotate-90">
+                                <circle cx="80" cy="80" r="70" stroke="currentColor" stroke-width="8" fill="transparent" class="text-white/10" />
+                                <circle cx="80" cy="80" r="70" stroke="#bb942f" stroke-width="8" fill="transparent" 
+                                        stroke-dasharray="440" stroke-dashoffset="440" 
+                                        class="progress-ring" data-target="14" data-max="20" />
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white">
                                 <span class="counter" data-target="14">0</span>+
                             </div>
-                            <p class="text-lg text-black opacity-80">Years of Experience</p>
                         </div>
-        
-                        <div data-aos="fade-up" data-aos-delay="400">
-                            <div class="text-5xl font-bold text-black mb-2">
+                        <p class="text-slate-300 text-lg font-medium">Years of Experience</p>
+                    </div>
+
+                    <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="relative w-40 h-40 mb-6">
+                            <svg class="w-full h-full -rotate-90">
+                                <circle cx="80" cy="80" r="70" stroke="currentColor" stroke-width="8" fill="transparent" class="text-white/10" />
+                                <circle cx="80" cy="80" r="70" stroke="#bb942f" stroke-width="8" fill="transparent" 
+                                        stroke-dasharray="440" stroke-dashoffset="440" 
+                                        class="progress-ring" data-target="300" data-max="300" />
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white">
                                 <span class="counter" data-target="300">0</span>+
                             </div>
-                            <p class="text-lg text-black opacity-80">Successful Cases</p>
                         </div>
-        
-                        <div data-aos="fade-up" data-aos-delay="600">
-                            <div class="text-5xl font-bold text-black mb-2">
+                        <p class="text-slate-300 text-lg font-medium">Successful Cases</p>
+                    </div>
+
+                    <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="relative w-40 h-40 mb-6">
+                            <svg class="w-full h-full -rotate-90">
+                                <circle cx="80" cy="80" r="70" stroke="currentColor" stroke-width="8" fill="transparent" class="text-white/10" />
+                                <circle cx="80" cy="80" r="70" stroke="#bb942f" stroke-width="8" fill="transparent" 
+                                        stroke-dasharray="440" stroke-dashoffset="440" 
+                                        class="progress-ring" data-target="96" data-max="100" />
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white">
                                 <span class="counter" data-target="96">0</span>%
                             </div>
-                            <p class="text-lg text-black opacity-80">Client Satisfaction</p>
                         </div>
-        
+                        <p class="text-slate-300 text-lg font-medium">Client Satisfaction</p>
                     </div>
+
                 </div>
             </div>
         </section>
     </div> 
 <?php $__env->stopSection(); ?>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const counters = document.querySelectorAll('.counter');
-        
-        const startCounters = (entries, observer) => {
-            entries.forEach(entry => {
-                // Trigger when even 10% of the section is visible
-                if (entry.isIntersecting) {
-                    const counter = entry.target;
-                    const target = +counter.getAttribute('data-target');
-                    const duration = 2000; // Total time for animation (2 seconds)
-                    const frameRate = 1000 / 60; // 60 frames per second
-                    const totalFrames = Math.round(duration / frameRate);
-                    let currentFrame = 0;
+<?php $__env->startPush('scripts'); ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.counter');
+            const rings = document.querySelectorAll('.progress-ring');
+            const circleCircumference = 2 * Math.PI * 70; // Matches 'r=70' in SVG (approx 440)
 
-                    const animate = () => {
-                        currentFrame++;
-                        const progress = currentFrame / totalFrames;
-                        // Use an "easeOut" formula so it slows down at the end
-                        const easedProgress = 1 - Math.pow(1 - progress, 3);
-                        const currentValue = Math.ceil(easedProgress * target);
+            const animateSection = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const parent = entry.target.closest('.flex');
+                        const counter = parent.querySelector('.counter');
+                        const ring = parent.querySelector('.progress-ring');
+                        
+                        const targetValue = +counter.getAttribute('data-target');
+                        const maxValue = +ring.getAttribute('data-max');
+                        const duration = 2000;
+                        const startTime = performance.now();
 
-                        if (currentFrame <= totalFrames) {
+                        const update = (now) => {
+                            const elapsed = now - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const easedProgress = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+
+                            // Update Number
+                            const currentValue = Math.ceil(easedProgress * targetValue);
                             counter.innerText = currentValue;
-                            requestAnimationFrame(animate);
-                        } else {
-                            counter.innerText = target;
-                        }
-                    };
 
-                    animate();
-                    observer.unobserve(counter);
-                }
-            });
-        };
+                            // Update Circle
+                            const percentage = (easedProgress * targetValue) / maxValue;
+                            const offset = circleCircumference - (percentage * circleCircumference);
+                            ring.style.strokeDashoffset = offset;
 
-        const observer = new IntersectionObserver(startCounters, {
-            threshold: 0.1 // Trigger earlier!
+                            if (progress < 1) {
+                                requestAnimationFrame(update);
+                            } else {
+                                counter.innerText = targetValue;
+                                ring.style.strokeDashoffset = circleCircumference - ( (targetValue/maxValue) * circleCircumference );
+                            }
+                        };
+
+                        requestAnimationFrame(update);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(animateSection, { threshold: 0.2 });
+            // Observe the parent containers
+            document.querySelectorAll('.flex.flex-col.items-center').forEach(div => observer.observe(div));
         });
-
-        counters.forEach(counter => observer.observe(counter));
-    });
-</script>
+        </script>
+<?php $__env->stopPush(); ?>
 <?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\public_html\resources\views/pages/about.blade.php ENDPATH**/ ?>

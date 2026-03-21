@@ -1,11 +1,5 @@
 
-<footer class="relative mt-20 text-[var(--primary-foreground)]  
-    bg-cover bg-center bg-no-repeat"
-    style="background-image: url('<?php echo e(asset('images/download (3).jpg')); ?>');">
-
-    <div class="absolute inset-0 bg-black/50"></div>
-
-    <div class="relative container mx-auto px-4 py-12">
+<footer class="text-[var(--primary-foreground)] mt-12 bg-[#212529]">
     <div class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="space-y-4">
@@ -65,7 +59,7 @@
             </div>
         </div>
 
-        <div class="mt-8 pt-8 border-t border-[var(--primary-foreground)]/20 text-center text-sm text-[var(--primary-foreground)]/60">
+        <div class="mt-2 pt-8 border-t border-[var(--primary-foreground)]/20 text-center text-sm text-[var(--primary-foreground)]/60">
             <p>&copy; <?php echo e(date('Y')); ?> Sehunane Attorneys Inc. All rights reserved.</p>
             <p> designed by Kgotsofatso Pholotho </p>
         </div>

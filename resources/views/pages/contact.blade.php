@@ -3,6 +3,9 @@
 @section('title', 'Contact Us | Sehunane Attorneys Inc Kempton Park Office')
 @section('meta_description', 'Need legal advice? Contact Sehunane Attorneys Inc today. Visit our Kempton Park office or schedule a consultation online for expert legal assistance.')
 
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endpush
 @section('content')
     @if (session('success'))
         <div class="mb-4 p-4 bg-green-100 text-green-800 rounded">
@@ -14,25 +17,12 @@
         <section class="relative h-[250px] flex items-center">
             <div class="absolute inset-0 overflow-hidden">
                 <img src="{{ asset('images/law-firm-1.jpg') }}" alt="about-img" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-[var(--gradient-hero)] opacity-70"></div>
+                <div class="absolute inset-0 bg-[#212529] opacity-70"></div>
             </div>
             <div class="container mx-auto px-4 relative z-10">
-                <ul class="flex items-center justify-center space-x-4 mt-4">
-                    <li class="text-[#bb942f] uppercase font-bold text-sm cursor-pointer">
-                        Home
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#bb942f] w-2 -rotate-90" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z" clip-rule="evenodd"></path>
-                        </svg>
-                    </li>
-                    <li class="text-[#bb942f] uppercase  text-sm">
-                       contact us
-                    </li>
-                    
-
-                </ul>
-                <h1 class="text-center text-2xl md:text-3xl font-[var(--font-cormorant)]  font-bold text-white mb-6" data-aos="fade-up" data-aos-duration="1000">
+                
+            
+                <h1 class="heading text-center text-2xl md:text-3xl font-[var(--font-cormorant)]  font-bold text-white mb-6" data-aos="fade-up" data-aos-duration="1000">
                     Contact Us
                 </h1>
             </div>
@@ -165,12 +155,197 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
+        {{-- FAQ Section --}}
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-screen-xl mx-auto p-4">
+                <div class="mb-12 max-w-4xl">
+                    <h2 class="text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>
+                    <p class="text-[15px] text-slate-600 leading-relaxed mt-6">
+                        Explore our comprehensive guide to common legal questions, categorized to help you find the answers you need quickly.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    {{-- Left Column --}}
+                    <div class="space-y-6">
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2">General Services & Consultations</h3>
+                        
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">1. What services does your law firm offer?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Our law firm provides legal services in areas such as civil litigation, family law, labour law, debt collection, contract drafting, deceased estates, property disputes, and legal advice.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">2. Do you offer online legal consultations?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Yes. We offer consultations via telephone, email, and video conferencing, allowing clients across South Africa to receive legal advice without visiting our offices.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">3. How do I book a consultation?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">You can book by completing the contact form on our website, sending us an email, or calling our office to schedule an appointment.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">4. What is the cost and what documents are needed?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Fees vary by complexity. For the meeting, please bring your ID, any contracts, court documents, correspondence related to the dispute, and supporting evidence.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2 mt-8">Litigation & Court Matters</h3>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">6. How long does a case take and can it be settled out of court?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Cases can take a few months to over a year. Yes, many are resolved through negotiation or mediation, which saves time and costs.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">8. What is a Letter of Demand and a Summons?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">A Letter of Demand is a formal warning to settle a claim. A Summons is an official document that starts a lawsuit in court.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2 mt-8">Family Law</h3>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">10. Divorce: Uncontested vs Contested</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Uncontested divorces (2-3 months) happen when both parties agree. Contested divorces can take years. Maintenance can be applied for at the Maintenance Court if a parent fails to support a child.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2 mt-8">Labour Law</h3>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14_14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">13. Unfair Dismissal & CCMA</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">You must refer unfair dismissal to the CCMA within 30 days. We represent both employers and employees in disciplinary hearings and CCMA/Labour Court cases.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- Right Column --}}
+                    <div class="space-y-6">
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2">Debt Collection & Property</h3>
+                        
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">16. Debts and Evictions</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">We assist in recovering unpaid debts. For property, landlords cannot self-evict; they must follow the PIE Act which requires a court order.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2 mt-8">Wills & Deceased Estates</h3>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">19. Wills, Estates and Executors</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Without a Will, your estate is divided by the Intestate Succession Act. Estates take 6 months to 2 years to finalise. The executor identifies assets, pays debts, and distributes inheritance.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2 mt-8">Fees & Payments</h3>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">23. How do you charge and are there payment plans?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">We use hourly rates, fixed fees, or contingency fees. Payment plans can be arranged depending on the nature of the matter.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2 mt-8">Confidentiality & Legitimacy</h3>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">26. Is my information safe and is the firm legitimate?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Yes. All info is protected by attorney-client privilege. Our attorneys are registered with the Legal Practice Council (LPC) of South Africa.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2 mt-8">Starting Your Case</h3>
+
+                        <div class="accordion bg-white [box-shadow:0_2px_10px_-3px_rgba(14,14,14,0.3)] rounded-lg">
+                            <button type="button" class="toggle-button cursor-pointer p-6 w-full text-base font-medium text-left text-slate-900 flex items-center">
+                                <span class="mr-4">28. How do I start and when will I get feedback?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[14px] h-[14px] fill-current ml-auto shrink-0"><path d="M40.421 215.579H471.579C493.868 215.579 512 233.711 512 256s-18.132 40.421-40.421 40.421H40.421C18.132 296.421 0 278.289 0 256s18.132-40.421 40.421-40.421z"/><path class="plus" d="M215.579 40.421C215.579 18.132 233.711 0 256 0s40.421 18.132 40.421 40.421v431.158C296.421 493.868 278.289 512 256 512s-40.421-18.132-40.421-40.421V40.421z"/></svg>
+                            </button>
+                            <div class="content invisible max-h-0 px-6 overflow-hidden transition-all duration-300">
+                                <p class="text-[15px] text-slate-600">Contact us for a consultation to assess your options. Most inquiries receive feedback within 24 to 48 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
     </div>
         
 @endsection
 
 @push('scripts')
         <script>
+            // FAQ Accordion Logic
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.accordion').forEach(elm => {
+                    const button = elm.querySelector('.toggle-button');
+                    const content = elm.querySelector('.content');
+                    const plusIcon = button.querySelector('.plus');
+
+                    button.addEventListener('click', () => {
+                        const isHidden = content.classList.toggle('invisible');
+                        content.style.maxHeight = isHidden ? '0px' : `${content.scrollHeight + 100}px`;
+                        button.classList.toggle('font-semibold', !isHidden);
+                        button.classList.toggle('font-medium', isHidden);
+                        content.classList.toggle('pb-6', !isHidden);
+                        plusIcon.classList.toggle('hidden', !isHidden);
+                        plusIcon.classList.toggle('block', isHidden);
+                    });
+                });
+            });
             // --- 1. WHATSAPP LOGIC ---
             function sendToWhatsApp() {
                 const name = document.getElementById('name').value.trim();
@@ -183,7 +358,7 @@
                     return;
                 }
     
-                const whatsappNumber = "27720621529";
+                const whatsappNumber = "27603561780";
                 const text = `*New Consultation Request*%0A` +
                              `*From:* ${encodeURIComponent(name)}%0A` +
                              `*Subject:* ${encodeURIComponent(subject)}%0A` +

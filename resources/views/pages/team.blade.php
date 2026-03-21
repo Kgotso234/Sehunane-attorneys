@@ -3,6 +3,9 @@
 @section('title', 'Meet Our Legal Team | Expert Attorneys in Kempton Park')
 @section('meta_description', 'Meet the dedicated legal professionals at Sehunane Attorneys Inc. Our team brings decades of combined experience to solve your legal challenges.')
 
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endpush
 @section('content')
 <div class="min-h-screen">
     {{-- header --}}
@@ -11,147 +14,140 @@
             <img src="{{ asset('images/law-firm-1.jpg') }}" alt="about-img" class="w-full h-full object-cover transition-transform duration-[5000ms] hover:scale-110" data-aos="zoom-out" data-aos-duration="2000">
             <div class="absolute inset-0 bg-[var(--gradient-hero)] opacity-70"></div>
         </div>
-        <!--<div class="container mx-auto px-4 relative z-10">-->
-        <!--    <div class="max-w-4xl mx-auto text-center">-->
-        <!--        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-[var(--primary-foreground)] " data-aos="fade-down" data-aos-duration="1000">Meet Our Team</h1>-->
-        <!--        <p class="text-xl text-[var(--primary-foreground)]/90" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">-->
-        <!--            At Sehunane Attorneys Inc, our team is our greatest asset. Committed to excellence and driven by passion, our professionals work collaboratively to provide top-tier legal services tailored to your needs.-->
-        <!--        </p>-->
-        <!--    </div>-->
-        <!--</div>-->
+       
         <div class="container mx-auto px-4 relative z-10">
-                <!--<div class="max-w-3xl mx-auto text-center">-->
-                <!--    <h1 class="text-3xl md:text-5xl font-bold text-[var(--primary-foreground)] mb-6" data-aos="fade-down" data-aos-duration="1000">-->
-                <!--        About Sehunane Attorneys Inc-->
-                <!--    </h1>-->
-                <!--    <p class="text-xl text-[var(--primary-foreground)]/90" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">-->
-                <!--        Sehunane Attorneys Inc is a leading law firm dedicated to providing exceptional legal services to our clients. With a team of experienced attorneys, we specialize in various areas of law, ensuring comprehensive support for individuals and businesses alike.-->
-                <!--    </p>-->
-                <!--</div>-->
-                <ul class="flex items-center justify-center space-x-4 mt-4">
-                  <li class="text-[var(--primary-foreground)] font-bold text-[16px] cursor-pointer">
-                    Home
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-500 w-3 -rotate-90" viewBox="0 0 24 24">
-                      <path fill-rule="evenodd"
-                        d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
-                        clip-rule="evenodd" data-original="#000000"></path>
-                    </svg>
-                  </li>
-                  <li class="text-[var(--primary-foreground)] font-bold text-[16px]">
-                    Our Team
-                  </li>
-                </ul>
-                
-                <h1 class=" text-center text-2xl md:text-5xl font-bold text-[var(--primary-foreground)] mb-6" data-aos="fade-down" data-aos-duration="1000">
-                    Meet Our Team
-                </h1>
-            </div>
+            <h1 class="heading text-center text-2xl md:text-5xl font-bold text-[var(--primary-foreground)] mb-6">
+                Meet Our Team
+            </h1>
+        </div>
     </section>
     {{-- Team introduction --}}
-    <section class="py-20 overflow-hidden">
+    <section class="py-24 bg-white overflow-hidden">
         <div class="container mx-auto px-4">
-            {{-- intro text --}}
-            <div class="max-w-3xl mx-auto mb-16 text-center" data-aos="fade-up">
-                <p class="text-lg text-[var(--muted-foreground)] leading-relaxed">
-                    Our experienced team brings decades of expertise to every case. We are committed to providing personalized, compassionate legal representation and standing by your side.
+            
+            <div class="max-w-3xl mx-auto mb-20 text-center" data-aos="fade-up">
+                <h1 class="heading text-4xl md:text-6xl font-bold text-[#36251e] mb-6">Our Legal Team</h1>
+                <div class="heading-line mx-auto"></div>
+                <p class="text-xl text-slate-500 mt-8 leading-relaxed italic">
+                    "United by a commitment to justice, driven by excellence in Kempton Park."
                 </p>
             </div>
-    
-            {{-- founder section --}}
-            <div class="max-w-5xl mx-auto mb-20" data-aos="fade-up">
-                <div class="shadow-strong overflow-hidden rounded-2xl bg-[var(--primary-foreground)] group">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-                        {{-- Director Image with subtle zoom on hover --}}
-                        <div class="relative h-[400px] md:h-auto overflow-hidden">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                                 src="{{ asset('images/image_icon.svg')}}" alt="founder">
-                        </div>
-                        
-                        <div class="p-8 md:p-12 flex flex-col justify-center" data-aos="fade-left" data-aos-delay="200">
-                            <div class="inline-block px-4 py-1 bg-[var(--accent)]/10 rounded-full text-sm text-[var(--accent)] font-semibold mb-4 w-fit">
-                                Director
+
+            <div class="max-w-5xl mx-auto mb-32">
+                <div class="relative group" data-aos="fade-up">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#bb942f] to-[#36251e] rounded-3xl blur opacity-10 group-hover:opacity-25 transition duration-1000"></div>
+                    
+                    <div class="relative bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                        <div class="grid grid-cols-1 lg:grid-cols-2">
+                            <div class="h-[450px] overflow-hidden">
+                                <img src="{{ asset('images/c00c80467b323cdb9b6c5415aeb30084.png') }}" 
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+                                    alt="Rueben Masilo Sehunane">
                             </div>
-                            <h2 class="text-3xl font-bold text-[var(--primary)]">Rueben Masilo Sehunane</h2>
-                            <p class="text-lg text-[var(--accent)] mb-4">Director</p>
-                            <p class="text-[var(--muted-foreground)] leading-relaxed mb-6">
-                                Masilo Rueben Sehunane, Director of Sehunane Attorneys Inc, brings over a decade of legal expertise and a strong commitment to justice, leading the firm with excellence and dedication to client advocacy.
-                            </p>
-                            
-                            <!--<a href="mailto:reubenmasilo@sehunaneattorneysinc.co.za" class="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium">-->
-                            <!--    <i data-lucide="mail" class="h-4 w-4"></i>-->
-                            <!--    reubenmasilo@sehunaneattorneys.co.za-->
-                            <!--</a>        -->
+                            <div class="p-10 md:p-16 flex flex-col justify-center bg-slate-50">
+                                <span class="text-[#bb942f] font-bold uppercase tracking-[0.3em] text-sm mb-4">Director & Founder</span>
+                                <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">Rueben Masilo Sehunane</h2>
+                                <p class="text-slate-600 leading-relaxed mb-8">
+                                    With over a decade of specialized expertise, Rueben leads Sehunane Attorneys Inc with a vision of accessible, high-caliber legal defense. His leadership ensures every client receives meticulous advocacy.
+                                </p>
+                                <div class="flex items-center gap-4 pt-6 border-t border-gray-200">
+                                    <div class="w-12 h-12 bg-[#36251e] rounded-full flex items-center justify-center">
+                                        <i data-lucide="scale" class="text-[#bb942f] w-5 h-5"></i>
+                                    </div>
+                                    <p class="font-bold text-sm uppercase text-black tracking-wider">Expertise: High Court Litigation</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold mb-12 text-center text-[var(--primary)]" data-aos="fade-down">Our Associates</h2>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {{-- associate 1 --}}
-                    <div class="shadow-medium hover:shadow-strong transition-all duration-300 overflow-hidden rounded-2xl bg-[var(--primary-foreground)] group" 
-                         data-aos="fade-right" data-aos-delay="100">
-                        <div class="relative h-[500px] overflow-hidden">
-                            <img src="{{ asset('images/image_icon.svg') }}" alt="Mohale Ernest Seunane" 
-                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                        </div>
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold text-primary mb-2">Mohale Ernest Seunane</h3>
-                            <p class="text-lg text-accent mb-4">Paralegal</p>
-                            <p class="text-muted-foreground mb-4 leading-relaxed">
-                                Mohale Ernest Seunane is a dedicated Paralegal at Sehunane Attorneys Inc, providing key support in case preparation and legal research with a strong focus on client service.
-                            </p>
-                            <!--<a href="mailto:mohaleernest@sehunaneattorneysinc.co.za" class="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium text-sm">-->
-                            <!--    <i data-lucide="mail" class="h-4 w-4"></i>-->
-                            <!--    mohaleernest@sehunaneattorneys.co.za-->
-                            <!--</a>-->
-                        </div>
-                    </div>
-    
-                    {{-- associate 2 --}}
-                    <div class="shadow-medium hover:shadow-strong transition-all duration-300 overflow-hidden rounded-2xl bg-[var(--primary-foreground)] group" 
-                         data-aos="fade-left" data-aos-delay="300">
-                        <div class="relative h-[500px] overflow-hidden">
-                            <img src="{{ asset('images/image_icon.svg') }}" alt="Rakhidi Seunane" 
-                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                        </div>
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold text-primary mb-2">Rakhidi Lucky Seunane</h3>
-                            <p class="text-lg text-accent mb-4">Office Manager</p>
-                            <p class="text-muted-foreground mb-4 leading-relaxed">
-                                Rakhidi Lucky Seunane is the Office Manager at Sehunane Attorneys Inc, ensuring smooth daily operations and providing essential administrative support to enhance firm efficiency.
-                            </p>
-                            <!--<a href="mailto:rakhidilucky@sehunaneattorneysinc.co.za" class="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium text-sm">-->
-                            <!--    <i data-lucide="mail" class="h-4 w-4"></i>-->
-                            <!--    rakhidilucky@sehunaneattorneys.co.za-->
-                            <!--</a>-->
+                <div class="flex items-center gap-4 mb-12">
+                    <h3 class="text-2xl font-bold text-[#36251e] whitespace-nowrap">Professional Associates</h3>
+                    <div class="h-px bg-slate-200 w-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100" data-aos="fade-right">
+                        <div class="flex flex-col sm:flex-row">
+                            <div class="sm:w-2/5 h-64 sm:h-auto overflow-hidden">
+                                <img src="{{ asset('images/c00c80467b323cdb9b6c5415aeb30084.png') }}" 
+                                    class="w-full h-full object-cover  group-hover:grayscale-0 transition-all duration-700" 
+                                    alt="Mohale Ernest Seunane">
+                            </div>
+                            <div class="p-8 sm:w-3/5 flex flex-col justify-center">
+                                <h4 class="text-xl font-bold text-black mb-1">Mohale Ernest Seunane</h4>
+                                <p class="text-[#bb942f] font-semibold text-sm uppercase tracking-widest mb-4">Paralegal</p>
+                                <p class="text-slate-500 text-sm leading-relaxed">
+                                    Dedicated to rigorous legal research and strategic case preparation.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100" data-aos="fade-left">
+                        <div class="flex flex-col sm:flex-row">
+                            <div class="sm:w-2/5 h-64 sm:h-auto overflow-hidden">
+                                <img src="{{ asset('images/c00c80467b323cdb9b6c5415aeb30084.png') }}" 
+                                    class="w-full h-full object-cover  group-hover:grayscale-0 transition-all duration-700" 
+                                    alt="Rakhidi Lucky Seunane">
+                            </div>
+                            <div class="p-8 sm:w-3/5 flex flex-col justify-center">
+                                <h4 class="text-xl font-bold text-black mb-1">Rakhidi Lucky Seunane</h4>
+                                <p class="text-[#bb942f] font-semibold text-sm uppercase tracking-widest mb-4">Office Manager</p>
+                                <p class="text-slate-500 text-sm leading-relaxed">
+                                    Driving operational efficiency and administrative excellence across the firm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     
     {{-- CTA Section --}}
-    <section class="py-20 bg-[var(--muted)]">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center" data-aos="zoom-in">
-                <h2 class="text-3xl font-bold text-[var(--primary)] mb-6">
-                    Ready to Work With Our Team?
-                </h2>
-                <p class="text-lg text-[var(--muted-foreground)] mb-8">
-                    Our team at Sehunane Attorneys Inc is here to provide the expert legal support you need. Reach out now to schedule a consultation and take the first step towards resolving your legal matters.
-                </p>
-                <a href="{{ url('/contact') }}"
-                    class="inline-block px-8 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg hover:bg-[var(--primary)]/90 transition-all hover:scale-105 font-semibold shadow-lg">
-                    Schedule a Consultation
-                </a>
+     <section class="relative py-15 overflow-hidden bg-[#36251e]">
+            <div class="absolute inset-0 z-0">
+                <img src="{{ asset('images/Lawyer Office Designs_ Elevate.jpg') }}" 
+                    class="w-full h-full object-cover opacity-10 grayscale bg-zoom-slow" 
+                    alt="Legal Consultation Background">
+                <div class="absolute inset-0 bg-radial-gradient from-transparent to-[#36251e]/80"></div>
             </div>
-        </div>
-    </section>
-</div>
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in" data-aos-duration="1000">
+                    
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-[#bb942f]/10 rounded-full mb-8 border border-[#bb942f]/30">
+                        <i data-lucide="calendar-check" class="h-8 w-8 text-[#bb942f]"></i>
+                    </div>
+
+                    <h2 class="heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                        Secure Your <span class="text-[#bb942f]">Legal Future</span> Today
+                    </h2>
+                    
+                    <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                        Expert legal representation is just a conversation away. Our team in Kempton Park is ready to listen, advise, and advocate for your rights.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="{{ url('/contact') }}" 
+                        class="group relative inline-flex items-center gap-3 bg-[#bb942f] text-black font-bold py-4 px-10 rounded-full transition-all duration-300 hover:bg-white hover:scale-105 shadow-xl shadow-gold/20">
+                            Schedule Your Consultation
+                            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        
+                        <a href="tel:0720621529" class="text-white hover:text-[#bb942f] transition-colors font-medium flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            Or Call Us: 072 062 1529
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
 @endsection
