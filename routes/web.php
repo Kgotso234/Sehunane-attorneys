@@ -31,9 +31,9 @@ Route::get('/case-studies', function () {
     return view('pages.case-studies');
 })->name('case-studies');
 
-Route::get('/testimonials', function () {
-    return view('pages.testimonials');
-})->name('testimonials');
+Route::get('/insights', function () {
+    return view('pages.insights');
+})->name('insights');
 
 
 Route::prefix('/services')->group(function () {
@@ -42,8 +42,8 @@ Route::prefix('/services')->group(function () {
     Route::get('/commercial-law', function () { return view('pages.services.commercial'); })->name('services.commercial');
     Route::get('/criminal-law', function () { return view('pages.services.criminal'); })->name('services.criminal');
     Route::get('/litigation', function () { return view('pages.services.litigation'); })->name('services.litigation');
-    Route::get('/Third-Party-Claims', function () { return view('pages.services.third-party'); })->name('services.third-party');
-    Route::get('/Constitutional-Litigation', function () { return view('pages.services.Constitutional'); })->name('services.constitutional');
+    Route::get('/third-party-claims', function () { return view('pages.services.third-party'); })->name('services.third-party');
+    Route::get('/Constitutional-litigation', function () { return view('pages.services.Constitutional'); })->name('services.constitutional');
 });
 
     

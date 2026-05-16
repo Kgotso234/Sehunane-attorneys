@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+        <loc>https://sehunaneattorneys.co.za/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/about</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/team</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/contact</loc>
+        <priority>0.9</priority>
+    </url>
+
+    
+    <url>
+        <loc>https://sehunaneattorneys.co.za/services/property-conveyancing</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/services/third-party-claims</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/services/civil-litigation</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/services/commercial-law</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/services/criminal-law</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/services/labour-law</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sehunaneattorneys.co.za/services/constitutional-litigation</loc>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>

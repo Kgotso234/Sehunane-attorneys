@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://sehunaneattorneys.co.za/public/sitemap.xml

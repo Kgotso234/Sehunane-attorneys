@@ -2,9 +2,7 @@
 @section('title', 'About Sehunane Attorneys Inc | Leading Law Firm in Kempton Park')
 @section('meta_description', 'Learn about Sehunane Attorneys Inc, a multi-disciplinary law firm in Kempton Park. Led by Rueben Masilo Sehunane, we provide expert legal advocacy in diverse fields.')
 
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-@endpush
+
 @section('content')
 
     <div class="min-h-screen">
@@ -155,7 +153,7 @@
                             <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#bb942f]/10 rounded-full z-0"></div>
                             
                             <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-b-8 border-[#bb942f]">
-                                <img src="{{ asset('images/c00c80467b323cdb9b6c5415aeb30084.png') }}" 
+                                <img src="{{ asset('images/images.png') }}" 
                                     alt="Director Profile" 
                                     class="w-full h-[550px] object-cover object-top">
                                 
@@ -283,55 +281,64 @@
 @endsection
 
 @push('scripts')
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const counters = document.querySelectorAll('.counter');
-            const rings = document.querySelectorAll('.progress-ring');
-            const circleCircumference = 2 * Math.PI * 70; // Matches 'r=70' in SVG (approx 440)
+<script>
+document.addEventListener('DOMContentLoaded', () => {
 
-            const animateSection = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const parent = entry.target.closest('.flex');
-                        const counter = parent.querySelector('.counter');
-                        const ring = parent.querySelector('.progress-ring');
-                        
-                        const targetValue = +counter.getAttribute('data-target');
-                        const maxValue = +ring.getAttribute('data-max');
-                        const duration = 2000;
-                        const startTime = performance.now();
+    const circleCircumference = 2 * Math.PI * 70;
 
-                        const update = (now) => {
-                            const elapsed = now - startTime;
-                            const progress = Math.min(elapsed / duration, 1);
-                            const easedProgress = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+    const animateSection = (entries, observer) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
 
-                            // Update Number
-                            const currentValue = Math.ceil(easedProgress * targetValue);
-                            counter.innerText = currentValue;
+            const parent = entry.target;
 
-                            // Update Circle
-                            const percentage = (easedProgress * targetValue) / maxValue;
-                            const offset = circleCircumference - (percentage * circleCircumference);
-                            ring.style.strokeDashoffset = offset;
+            const counter = parent.querySelector('.counter');
+            const ring = parent.querySelector('.progress-ring');
 
-                            if (progress < 1) {
-                                requestAnimationFrame(update);
-                            } else {
-                                counter.innerText = targetValue;
-                                ring.style.strokeDashoffset = circleCircumference - ( (targetValue/maxValue) * circleCircumference );
-                            }
-                        };
+            // ✅ Safety check (prevents null errors)
+            if (!counter || !ring) return;
 
-                        requestAnimationFrame(update);
-                        observer.unobserve(entry.target);
-                    }
-                });
+            const targetValue = +counter.getAttribute('data-target');
+            const maxValue = +ring.getAttribute('data-max');
+
+            const duration = 2000;
+            const startTime = performance.now();
+
+            const update = (now) => {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+                // Update number
+                const currentValue = Math.ceil(easedProgress * targetValue);
+                counter.innerText = currentValue;
+
+                // Update circle
+                const percentage = (easedProgress * targetValue) / maxValue;
+                const offset = circleCircumference - (percentage * circleCircumference);
+                ring.style.strokeDashoffset = offset;
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    counter.innerText = targetValue;
+                    ring.style.strokeDashoffset =
+                        circleCircumference - ((targetValue / maxValue) * circleCircumference);
+                }
             };
 
-            const observer = new IntersectionObserver(animateSection, { threshold: 0.2 });
-            // Observe the parent containers
-            document.querySelectorAll('.flex.flex-col.items-center').forEach(div => observer.observe(div));
+            requestAnimationFrame(update);
+            observer.unobserve(parent);
         });
-        </script>
+    };
+
+    const observer = new IntersectionObserver(animateSection, { threshold: 0.2 });
+
+    // only observe elements that exist
+    document.querySelectorAll('.flex.flex-col.items-center').forEach(el => {
+        observer.observe(el);
+    });
+
+});
+</script>
 @endpush

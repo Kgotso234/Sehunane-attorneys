@@ -4,7 +4,7 @@
 <?php $__env->startSection('meta_description', 'Meet the dedicated legal professionals at Sehunane Attorneys Inc. Our team brings decades of combined experience to solve your legal challenges.'); ?>
 
 <?php $__env->startPush('styles'); ?>
-    <link rel="stylesheet" href="<?php echo e(asset('css/style.css')); ?>">
+    
 <?php $__env->stopPush(); ?>
 <?php $__env->startSection('content'); ?>
 <div class="min-h-screen">
@@ -40,7 +40,7 @@
                     <div class="relative bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
                         <div class="grid grid-cols-1 lg:grid-cols-2">
                             <div class="h-[450px] overflow-hidden">
-                                <img src="<?php echo e(asset('images/c00c80467b323cdb9b6c5415aeb30084.png')); ?>" 
+                                <img src="<?php echo e(asset('images/images.png')); ?>" 
                                     class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
                                     alt="Rueben Masilo Sehunane">
                             </div>
@@ -73,7 +73,7 @@
                     <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100" data-aos="fade-right">
                         <div class="flex flex-col sm:flex-row">
                             <div class="sm:w-2/5 h-64 sm:h-auto overflow-hidden">
-                                <img src="<?php echo e(asset('images/c00c80467b323cdb9b6c5415aeb30084.png')); ?>" 
+                                <img src="<?php echo e(asset('images/images.png')); ?>" 
                                     class="w-full h-full object-cover  group-hover:grayscale-0 transition-all duration-700" 
                                     alt="Mohale Ernest Seunane">
                             </div>
@@ -90,7 +90,7 @@
                     <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100" data-aos="fade-left">
                         <div class="flex flex-col sm:flex-row">
                             <div class="sm:w-2/5 h-64 sm:h-auto overflow-hidden">
-                                <img src="<?php echo e(asset('images/c00c80467b323cdb9b6c5415aeb30084.png')); ?>" 
+                                <img src="<?php echo e(asset('images/images.png')); ?>" 
                                     class="w-full h-full object-cover  group-hover:grayscale-0 transition-all duration-700" 
                                     alt="Rakhidi Lucky Seunane">
                             </div>

@@ -49,9 +49,9 @@
                         <div class="relative h-full p-8 flex flex-col justify-end">
                             <span class="px-3 py-1 mb-4 text-[10px] font-bold tracking-widest uppercase bg-blue-600 text-white rounded-full w-fit">Labour Court Victory</span>
                             
-                            <h3 class="text-3xl md:text-5xl font-bold text-white mb-4">Upholding Finality in Litigation</h3>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Upholding Finality in Litigation</h3>
                             
-                            <p class="text-slate-200 max-w-2xl text-lg leading-relaxed mb-6">
+                            <p class="text-slate-200  text-sm leading-relaxed mb-6">
                                 Successfully defended an employee against a <span class="text-[var(--accent)] font-bold">27-month delayed</span> rescission application[cite: 67]. We convinced the Labour Court that "excessive" delays without valid explanations frustrate the ends of justice[cite: 95, 126]. The court dismissed the employer's attempt to stall, ordering the matter to proceed to trial immediately[cite: 134].
                             </p>
                             
@@ -77,9 +77,9 @@
                         <div class="relative h-full p-8 flex flex-col justify-end">
                             <span class="px-3 py-1 mb-4 text-[10px] font-bold tracking-widest uppercase bg-amber-600 text-white rounded-full w-fit">Employment Law Victory</span>
                             
-                            <h3 class="text-3xl md:text-5xl font-bold text-white mb-4">Defending Procedural Rights</h3>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Defending Procedural Rights</h3>
                             
-                            <p class="text-slate-200 max-w-2xl text-lg leading-relaxed mb-6">
+                            <p class="text-slate-200  text-sm leading-relaxed mb-6">
                                 In a landmark case against <span class="text-[var(--accent)] font-bold">Umso Construction</span>, we successfully argued that economic necessity does not excuse a failure to follow fair retrenchment procedures[cite: 482, 484, 529]. We secured <span class="text-[var(--accent)] font-bold">R122,000</span> in compensation and full legal costs for our client after proving a lack of meaningful consultation.
                             </p>
                             
@@ -141,8 +141,8 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
                         <div class="relative h-full p-8 flex flex-col justify-end">
                             <span class="px-3 py-1 mb-4 text-[10px] font-bold tracking-widest uppercase bg-indigo-600 text-white rounded-full w-fit">High Court Victory</span>
-                            <h3 class="text-3xl md:text-5xl font-bold text-white mb-4">Securing Real Estate Assets</h3>
-                            <p class="text-slate-200 max-w-2xl text-lg leading-relaxed mb-6">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Securing Real Estate Assets</h3>
+                            <p class="text-slate-200 text-sm leading-relaxed mb-6">
                                 Representing the First Respondent, we successfully upheld a valid sale agreement in the High Court. By dismantling grounds for appeal, we secured our client's undisputed ownership of high-value Gauteng property.
                             </p>
                             <div class="flex items-center gap-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">

@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="google-site-verification" content="pOnpcic50oFPhvEZE-xBxk4hh8NvkzIYj8LEI4Ex7UE" />
     
-    <title>@yield('title', 'Sehunane Attorneys Inc. | Corporate, Criminal & Family Law Kempton Park')</title>
+    <meta name="google-site-verification" content="pOnpcic50oFPhvEZE-xBxk4hh8NvkzIYj8LEI4Ex7UE" />
 
-    <meta name="description" content="@yield('meta_description', 'Expert legal services in Kempton Park. Sehunane Attorneys Inc specializes in Labour, Criminal, Civil, Corporate, Family, and Property law. Book a consultation today.')">
-    <meta name="keywords" content="Attorneys Kempton Park, Labour Law, Criminal Defense, Family Law, Divorce Lawyer, Property Law, Civil Litigation South Africa">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>@yield('title', 'Sehunane Attorneys Inc | Full-Service Law Firm in Kempton Park')</title>
+
+    <meta name="description" content="@yield('meta_description', 'Sehunane Attorneys Inc is a 100% Black-Owned law firm in Kempton Park. We provide comprehensive legal services in Labour, Criminal, Family, and Corporate Law to protect your future.')">
+
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <meta property="og:title" content="@yield('title', 'Sehunane Attorneys Inc | Legal Excellence')">
+    <meta property="og:description" content="Comprehensive legal solutions in Kempton Park. 100% Black-Owned and committed to justice.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('images/sehunane_logo.png') }}">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title', 'Sehunane Attorneys Inc')">
+
+    <link rel="icon" href="{{ asset('images/sehunane_logo.png') }}">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    @vite(['resources/css/app.css'])
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Commissioner:wght@400;700&family=Cormorant+Upright:wght@500;700&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
-    
-    <link rel="stylesheet" href="{{ asset('build/assets/app-sqKvUfiY.css') }}">
-    
-    <script type="module" src="{{ asset('build/assets/app-CvgioS1y.js') }}"></script>
-    
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     @stack('styles')
-</head>
     
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "LegalService",
+          "name": "Sehunane Attorneys Inc",
+          "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, and Corporate law.",
+          "url": "{{ url('/') }}",
+          "logo": "{{ asset('images/sehunane_logo.png') }}",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Monument Road, 302A Closemore Building ",
+            "addressLocality": "Kempton Park",
+            "addressRegion": "Gauteng",
+            "postalCode": "1620",
+            "addressCountry": "South Africa"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-26.10023",
+            "longitude": "28.23137"
+          },
+          "telephone": "+27603561780",
+          "email": "info@sehunaneattorneys.co.za",
+          "priceRange": "$$",
+          "areaServed": "Kempton Park, Gauteng",
+          "knowsAbout": ["Labour Law", "Criminal Law", "Civil Litigation", "Family Law", "Corporate Law"]
+        }
+    </script>    
     
 <body>
     <div class="flex flex-col min-h-screen">

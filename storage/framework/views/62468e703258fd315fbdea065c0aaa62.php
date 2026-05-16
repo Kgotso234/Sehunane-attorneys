@@ -42,7 +42,7 @@
                         ['name' => 'Our Team', 'path' => '/team'],
                         ['name' => 'Services', 'path' => '#', 'is_dropdown' => true],
                         ['name' => 'Case Studies', 'path' => '/case-studies'],
-                        ['name' => 'Testimonials', 'path' => '/testimonials'],
+                        ['name' => 'Legal Insights', 'path' => '/insights'],
                         ['name' => 'Contact Us', 'path' => '/contact'],
                     ];
                     $currentUrl = rtrim(url()->current(), '/');
@@ -74,9 +74,9 @@
                             <ul class="service-dropdown absolute left-0 top-full hidden lg:group-hover:block bg-[#212529] min-w-[240px] shadow-2xl border-t-2 border-[#b38b2d] z-50">
 
                                 <?php $__currentLoopData = [
-                                    ['route' => 'services.constitutional', 'label' => 'Constitutional Litigation'],
                                     ['route' => 'services.litigation', 'label' => 'Civil Litigation'],
                                     ['route' => 'services.commercial', 'label' => 'Commercial Law'],
+                                    ['route' => 'services.constitutional', 'label' => 'Constitutional Litigation'],
                                     ['route' => 'services.criminal', 'label' => 'Criminal Law'],
                                     ['route' => 'services.labour', 'label' => 'Labour Law'],
                                     ['route' => 'services.property', 'label' => 'Property & Conveyancing'],

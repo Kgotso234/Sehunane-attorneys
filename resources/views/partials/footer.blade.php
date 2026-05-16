@@ -9,7 +9,9 @@
                     <!--<span class="text-lg font-commissioner font-bold">Sehunane Attorneys Inc</span>-->
                 </div>
                 <p class="text-sm text-primary-foreground/80">
-                    Based in Kempton Park, Sehunane Attorneys Inc is a 100% Black-Owned firm. We combine our signature strength in Labour Law with a comprehensive range of legal services to protect your business, family, and future.
+                    Based in Kempton Park, Sehunane Attorneys Inc is a 100% Black-Owned firm dedicated to delivering high-caliber legal solutions. 
+                    From complex litigation and corporate advisory to specialized family and criminal law,
+                    our multi-disciplinary team provides the comprehensive expertise needed to protect your interests across every field of law.
                 </p>
             </div>
 
@@ -45,8 +47,8 @@
                     </li>
                     <li class="flex items-center gap-3">
                         <i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i>
-                        <a href="tel:+27114567890" class="hover:text-[var(--accent)] transition-colors">
-                            +27 11 456 7890
+                        <a href="tel:+27603561780" class="hover:text-[var(--accent)] transition-colors">
+                            +27 (603) 561-780
                         </a>
                     </li>
                     <li class="flex items-center gap-3">

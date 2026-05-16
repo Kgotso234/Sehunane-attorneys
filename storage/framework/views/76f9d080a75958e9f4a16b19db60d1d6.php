@@ -21,21 +21,8 @@
                 <div class="absolute inset-0 bg-[#212529] opacity-70"></div>
             </div>
             <div class="container mx-auto px-4 relative z-10">
-                <ul class="flex items-center justify-center space-x-4 mt-4">
-                    <li class="text-[#bb942f] uppercase font-bold text-sm cursor-pointer">
-                        Home
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#bb942f] w-2 -rotate-90" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z" clip-rule="evenodd"></path>
-                        </svg>
-                    </li>
-                    <li class="text-[#bb942f] uppercase  text-sm">
-                       contact us
-                    </li>
-                    
-
-                </ul>
+                
+            
                 <h1 class="heading text-center text-2xl md:text-3xl font-[var(--font-cormorant)]  font-bold text-white mb-6" data-aos="fade-up" data-aos-duration="1000">
                     Contact Us
                 </h1>

@@ -155,7 +155,7 @@
                             <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#bb942f]/10 rounded-full z-0"></div>
                             
                             <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-b-8 border-[#bb942f]">
-                                <img src="<?php echo e(asset('images/c00c80467b323cdb9b6c5415aeb30084.png')); ?>" 
+                                <img src="<?php echo e(asset('images/images.png')); ?>" 
                                     alt="Director Profile" 
                                     class="w-full h-[550px] object-cover object-top">
                                 

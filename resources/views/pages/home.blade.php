@@ -1,18 +1,15 @@
 @extends('layouts.app')
 
 @section('title', 'Sehunane Attorneys Inc | Full-Service Law Firm in Kempton Park')
-@section('meta_description', 'Sehunane Attorneys Inc provides expert legal counsel in Kempton Park for Criminal, Civil, and Corporate matters.')
+@section('meta_description', 'Looking for a trusted attorney in Kempton Park? Sehunane Attorneys Inc offers expert, full-service legal counsel for Criminal, Labour, Civil, and Property Law. Schedule your consultation today!')
 
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-@endpush
 @section('content')
     <div class="min-h-screen">
         {{-- Hero section --}}
         <section class="relative h-[650px] flex items-center overflow-hidden">
             <div class="absolute inset-0 z-0 overflow-hidden">
                 <img src="{{ asset('images/theme-17-1.jpg') }}" 
-                     alt="Legal Professionals" 
+                     alt="Sehunane Attorneys Inc - Expert Legal Counsel in Kempton Park" 
                      class="w-full h-full object-cover animate-slow-zoom">
                 <div class="absolute inset-0 bg-black/65 z-10"></div>
             </div>
@@ -22,15 +19,15 @@
                      data-aos="fade-right" 
                      data-aos-duration="1000">
                     
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-2 leading-tight">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 leading-tight">
                         Your Trusted Partners <br class="hidden md:block"> in <span class="text-[#b38b2d]">Legal Excellence</span>
                     </h1>
         
                     <p class="text-lg md:text-xl text-white/90 mb-6 max-w-2xl leading-relaxed" 
                        data-aos="fade-right" 
                        data-aos-delay="300">
-                        Based in <span class="text-[#b38b2d] font-semibold">Kempton Park</span> and serving surrounding areas, 
-                        Sehunane Attorneys Inc provides comprehensive legal solutions with integrity and expertise. 
+                        Based in <span class="text-[#b38b2d] font-semibold">Kempton Park</span> and serving <strong>Gauteng</strong>, 
+                        Sehunane Attorneys Inc is a <strong>100% Black-Owned firm</strong> providing comprehensive legal solutions with integrity and expertise. 
                         Our multi-disciplinary team is dedicated to protecting your interests across all fields of law.
                     </p>
         
@@ -51,9 +48,9 @@
             $services = [
                 [
                     'title' => 'Constitution Litigation',
-                    'slug' => 'constitutional-Litigation',
+                    'slug' => 'constitutional-litigation',
                     'icon' => 'building',
-                    'description' => 'Expert guidance on company formations, corporate governance, director duties, and compliance with the Companies Act.',
+                    'description' => 'Expert guidance on constitutional rights, public law disputes, and administrative justice in South Africa.',
                     'img' => 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80',
                     'span' => 'md:col-span-7' // Large card
                 ],
@@ -77,7 +74,7 @@
                     'title' => 'Criminal Law',
                     'slug' => 'criminal-law',
                     'icon' => 'gavel',
-                    'description' => 'Dedicated defense ensuring your constitutional rights are upheld at every stage.',
+                    'description' => 'Dedicated criminal defense lawyers in Kempton Park ensuring your rights are upheld at every stage.',
                     'img' => 'https://images.unsplash.com/photo-1589578594224-4bb0124ddcd1?auto=format&fit=crop&w=1200&q=80',
                     'span' => 'md:col-span-4' // Small card
                 ],
@@ -99,9 +96,9 @@
                 ],
                 [
                     'title' => 'Third Party Claims',
-                    'slug' => 'Third-Party-Claims',
+                    'slug' => 'third-party-claims',
                     'icon' => 'scroll',
-                    'description' => 'Secure your legacy with professional will drafting and estate administration.',
+                    'description' => 'Specialized legal assistance for RAF claims and personal injury litigation in Gauteng.',
                     'img' => 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80',
                     'span' => 'md:col-span-7' // Large card
                 ],
@@ -112,7 +109,7 @@
             <div class="container mx-auto px-4 relative z-10">
                 <div class="text-center mb-10">
                     <h2 class="heading text-3xl md:text-4xl font-bold text-black inline-block relative pt-5 pb-1">
-                        Our Legal Practice Areas              
+                        Our Practice Areas              
                     </h2>   
                     <div class="heading-line"></div>
                 </div>
@@ -157,7 +154,7 @@
             <div class="absolute inset-0 z-0">
                 <img src="{{ asset('images/office picture.jpg') }}" 
                     class="w-full h-full object-cover opacity-20 grayscale bg-zoom-slow" 
-                    alt="Legal Office Background">
+                    alt="Sehunane Attorneys Inc Law Office in Kempton Park">
                 <div class="absolute inset-0 bg-gradient-to-r from-[#212529] via-[#212529]/80 to-transparent"></div>
             </div>
 
@@ -167,16 +164,16 @@
                     <div class="lg:col-span-7 space-y-8">
                         <div>
                             <h2 class="heading text-3xl md:text-5xl font-bold text-white mb-4">
-                                Trusted Legal Guidance in Kempton Park
+                                Expert Legal Counsel in the Heart of Kempton Park
                             </h2>
                             <div class="heading-line dark-line !ml-0"></div> </div>
 
                         <div class="space-y-6 text-[#bb942f] text-lg leading-relaxed">
                             <p data-aos="fade-right">
-                                Without reliable and professional legal guidance, individuals and businesses can face serious financial loss, disputes, compliance risks, and unnecessary legal exposure.
+                               Navigating the South African legal landscape requires more than just knowledge—it requires a partner who understands your local context and your specific challenges.
                             </p>
                             <p data-aos="fade-right" data-aos-delay="200">
-                                Unresolved business disputes, employment conflicts, family matters, regulatory challenges, or risky agreements can disrupt your life or your operations.
+                                Whether you are dealing with employment disputes at the CCMA, property transfers in Gauteng, or criminal litigation, Sehunane Attorneys Inc provides the strategic advocacy you deserve.
                             </p>
                         </div>
                     </div>
@@ -186,10 +183,10 @@
                         <h3 class="heading text-2xl font-bold mb-6">Why Sehunane Attorneys Inc?</h3>
                         <div class="space-y-6 text-white text-lg opacity-90 leading-relaxed">
                             <p>
-                                That is why we established Sehunane Attorneys Inc — to provide clear, practical, and dependable legal solutions.
+                                100% Black-Owned and community-focused. We provide clear, practical legal solutions across all major practice areas.
                             </p>
                             <p>
-                                We offer structured legal support across consultation, drafting, and legal representation. If you are looking for trusted guidance, we are here to navigate your challenges.
+                                From initial consultation to final representation, we ensure transparency, integrity, and absolute dedication to your case.
                             </p>
                         </div>
                     </div>

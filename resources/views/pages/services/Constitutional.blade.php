@@ -1,259 +1,171 @@
 @extends('layouts.app')
 
-@section('title', 'Expert Constitutional Litigation Services | Sehunane Attorneys Inc')
-@section('meta_description', 'Specialized constitutional litigation representation in Kempton Park. We handle human rights cases,
-constitutional challenges, and legal disputes with professional excellence.')
+@section('title', 'Constitutional Law & Rights Defense Attorneys | Sehunane Attorneys Inc')
+@section('meta_description', 'Defending your fundamental rights in Kempton Park. Sehunane Attorneys Inc specializes in Bill of Rights litigation, PAJA reviews, and constitutional challenges in Gauteng.')
 
 @section('content')
-    <div class="min-h-screen">
-        {{-- Hero Section --}}
-        <section class="relative h-[250px] flex items-center">
-            <div class="absolute inset-0 overflow-hidden">
-                <img src="{{ asset('images/law-firm-1.jpg') }}" alt="about-img" class="w-full h-full object-cover transition-transform duration-[5000ms] hover:scale-110" >
-                <div class="absolute inset-0 bg-[var(--gradient-hero)] opacity-70"></div>
+    <div class="min-h-screen bg-[#fcfcfc]">
+        <section class="relative h-[350px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="{{ asset('images/law-firm-1.jpg') }}" alt="Constitutional Litigation" 
+                    class="w-full h-full object-cover bg-zoom-slow">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#36251e] to-[#36251e]/60 opacity-90"></div>
             </div>
+
             <div class="container mx-auto px-4 relative z-10">
-                
-                <ul class="flex items-center justify-center space-x-4 mt-4">
-                    <li class="text-[#bb942f] uppercase font-bold text-sm cursor-pointer">
-                        Home
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#bb942f] w-2 -rotate-90" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z" clip-rule="evenodd"></path>
-                        </svg>
-                    </li>
-                    <li class="text-[#bb942f] uppercase  text-sm">
-                        Services
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#bb942f] w-2 -rotate-90" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z" clip-rule="evenodd"></path>
-                        </svg>
-                    </li>
-                    <li class="text-[#bb942f] uppercase  text-sm">
-                        Constitutional Litigation
-                    </li>
-                    <h1 class="text-center text-2xl md:text-3xl  font-bold text-white mb-6" data-aos="fade-up" data-aos-duration="1000">
-                        Constitutional Litigation
-                    </h1>
-                </ul>
-                
+                <nav class="flex items-center space-x-2 text-sm text-[#bb942f] mb-4 font-semibold uppercase tracking-widest" data-aos="fade-down">
+                    <a href="/" class="hover:text-white transition-colors">Home</a>
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    <span class="text-white/60">Services</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    <span class="text-white">Constitutional Litigation</span>
+                </nav>
+                <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight" data-aos="fade-right">
+                    Constitutional <span class="text-[#bb942f]">Litigation</span>
+                </h1>
             </div>
         </section>
-        {{-- Main Content --}}
-        <div class="flex flex-col-reverse lg:flex-row min-h-screen ">
-             <aside class="lg:w-96 bg-white  flex-shrink-0 lg:flex flex-col ">
-                 <div class="p-6 flex items-center gap-2">
-                    <h2 class="text-md  text-black whitespace-nowrap">
-                        Practice Areas
-                    </h2>
-                    
-                    <div class="h-[1px] flex-grow bg-black"></div>
-                </div>
-                <nav class="flex-1  py-4 flex flex-col items-center">
-                    @php
-                        $services = [
-                            [   
-                                'route' => 'services.labour',
-                                'label' => 'Labour Law',
-                                
-                            ],
-                            [
-                                'route' => 'services.litigation',
-                                'label' => 'Civil Litigation',
-                                
-                            ],
-                            [
-                                'route' => 'services.commercial',
-                                'label' => 'Commercial Law',
-                                
-                            ],
-                            [
-                                'route' => 'services.criminal',
-                                'label' => 'Criminal Law',
-                                
-                            ],
-                            [
-                                'route' => 'services.constitutional',
-                                'label' => 'Constitutional litigation',
-                                
-                            ],
-                            [
-                                'route' => 'services.property',
-                                'label' => 'Property & Conveyancing',
-                            ],
-                            [
-                                'route' => 'services.third-party',
-                                'label' => 'Third Party Claims',
-                                
-                            ],
-                        ];
-                    @endphp
 
-                
-                    <ul class="space-y-2 w-full px-4">
-                        @php
-                            $activeClass = 'bg-[var(--primary)] text-white';
-                            $inactiveClass = 'bg-[var(--accent)] text-black';
-                        @endphp
-                        <ul class="space-y-2 w-full px-4 ">
-                            @foreach ($services as $service)
-                                <li >
+        <div class="container mx-auto px-4 py-16 lg:py-24">
+            <div class="flex flex-col lg:flex-row gap-16">
+                {{-- Left Sidebar: Sticky & Modern --}}
+                <aside class="lg:w-1/3">
+                    <div class="sticky top-24 space-y-8">
+                        
+                        {{-- Practice Areas Menu --}}
+                        <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100">
+                            <div class="p-6 bg-[#36251e] text-white">
+                                <h2 class="text-lg font-bold flex items-center gap-3">
+                                    <i data-lucide="briefcase" class="w-5 h-5 text-[#bb942f]"></i>
+                                    Practice Areas
+                                </h2>
+                            </div>
+                            <nav class="p-2">
+                                @php
+                                    $services = [
+                                        
+                                        ['route' => 'services.litigation', 'label' => 'Civil Litigation'],
+                                        ['route' => 'services.commercial', 'label' => 'Commercial Law'],
+                                         ['route' => 'services.constitutional', 'label' => 'Constitutional Litigation'],
+                                        ['route' => 'services.criminal', 'label' => 'Criminal Law'],
+                                        ['route' => 'services.labour', 'label' => 'Labour Law'],
+                                        ['route' => 'services.property', 'label' => 'Property & Conveyancing'],
+                                        ['route' => 'services.third-party', 'label' => 'Third Party Claims'],
+                                    ];
+                                @endphp
+
+                                @foreach ($services as $service)
                                     <a href="{{ route($service['route']) }}"
-                                       class="flex items-center px-6  py-3 font-semibold transition-all duration-300 
-                                       {{ request()->routeIs($service['route']) ? $activeClass : $inactiveClass }}">
-                        
-                                        {{ $service['label'] }}
+                                    class="group flex items-center justify-between px-4 py-4 rounded-xl transition-all duration-300 mb-1
+                                    {{ request()->routeIs($service['route']) 
+                                        ? 'bg-[#bb942f] text-white shadow-lg shadow-[#bb942f]/20' 
+                                        : 'hover:bg-slate-50 text-slate-600 hover:text-black' }}">
+                                        <span class="font-bold text-sm">{{ $service['label'] }}</span>
+                                        <i data-lucide="arrow-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 {{ request()->routeIs($service['route']) ? 'opacity-100' : '' }} transition-all"></i>
                                     </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                        
-                        {{-- Contact Information Card --}}
-                        <div class="mt-6 px-6 mb-10" data-aos="fade-up" data-aos-delay="500">
-                            <div class="bg-[#2D241E] p-8 text-white text-center  shadow-lg border border-white/5">
-                                <p class="text-xs uppercase tracking-widest mb-2 opacity-80">Are you looking for</p>
-                                <h3 class="text-2xl font-serif font-bold mb-1">Experienced</h3>
-                                <h3 class="text-2xl font-serif font-bold mb-4">Attorneys?</h3>
-                                <p class="text-sm mb-8 opacity-90 leading-tight">Reach out to us for consultation right now.</p>
-                        
-                                <div class="space-y-4 text-left inline-block mx-auto">
-                                    {{-- Phone --}}
-                                    <div class="flex items-center gap-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                        </svg>
-                                        <span class="text-sm">072 062 1529</span>
-                                    </div>
-                        
-                                    {{-- WhatsApp with Original Color --}}
-                                    <div class="flex items-center gap-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-[#25D366]" viewBox="0 0 24 24">
-                                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.43 5.63 1.43h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                                        </svg>
-                                        <span class="text-sm">072 062 1529</span>
-                                    </div>
-                        
-                                    {{-- Email --}}
-                                    <div class="flex items-center gap-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                        <span class="text-sm">info@sehunaneattorneys.co.za</span>
-                                    </div>
-                        
-                                    {{-- Hours --}}
-                                    <div class="flex items-center gap-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                        <span class="text-sm">Mon - Fri 8h00am - 4h30pm</span>
-                                    </div>
-                                </div>
-                        
-                                {{-- Schedule Button with Rounded Corners --}}
-                                <a href="#consultation" class="mt-8 block w-full bg-[#E9E49B] text-black py-3 rounded-xl font-bold hover:bg-white transition-all duration-300 uppercase text-xs tracking-widest">
-                                    schedule consultation
-                                </a>
+                                @endforeach
+                            </nav>
+                        </div>
+
+                        {{-- Dynamic Contact Card --}}
+                        <div class="bg-gradient-to-br from-[#36251e] to-[#241914] rounded-2xl p-8 text-white relative overflow-hidden group shadow-2xl">
+                            <i data-lucide="shield-check" class="absolute -right-4 -top-4 w-32 h-32 text-white/5 rotate-12 transition-transform group-hover:scale-110"></i>
+                            
+                            <h3 class="text-2xl font-bold mb-4 leading-tight relative z-10">
+                                Protecting Your <span class="text-[#bb942f]">Constitutional Rights</span>
+                            </h3>
+                            
+                            <p class="text-white/70 text-sm mb-8 relative z-10 leading-relaxed">
+                                The Constitution is the supreme law of the land. If your fundamental rights have been infringed, our litigation team is ready to provide expert defense.
+                            </p>
+                            
+                            <a href="tel:0603561780" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300 relative z-10">
+                                <i data-lucide="scale" class="w-5 h-5"></i>
+                                Consult a Specialist
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="lg:w-2/3">
+                    <div class="prose prose-slate max-w-none">
+                        <div class="mb-12" data-aos="fade-up">
+                            <span class="text-[#bb942f] font-bold uppercase tracking-widest text-xs">Overview</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-black mt-2 mb-6">Upholding the Supreme Law of the Republic</h2>
+                            <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                                <p>
+                                    In South Africa, the Constitution is the supreme law. At <strong>Sehunane Attorneys Inc</strong>, we believe that the Bill of Rights must be more than a document—it must be a lived reality. We specialize in navigating the complexities of Constitutional law to hold power accountable and protect individual freedoms.
+                                </p>
+                                <p>
+                                    Whether addressing state overreach, administrative unfairness under </strong>PAJA</strong> (Promotion of Administrative Justice Act), or the infringement of basic human rights, we provide the courageous advocacy needed to seek justice. Our team is experienced in litigating matters within the <strong>High Court</strong> and navigating the specialized procedures required for <strong>Constitutional Court</strong> referrals.
+                                </p>
                             </div>
                         </div>
-                </nav>
-             </aside>
-             <main class="flex-1 flex flex-col overflow-hidden p-8 lg:p-16">
-                <div class="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="text-3xl md:text-4xl font-bold text-black mb-8">Constitutional Litigation</h2>
-                    <div class="space-y-6 text-gray-700 leading-relaxed text-base">
-                        <p>
-                            Constitutional litigation involves matters that concern the interpretation, protection, and enforcement of constitutional rights. These cases may relate to equality, human rights, administrative justice, and the exercise of public power.
-                        </p>
-                        <p>
-                            At <strong>Sehunane Attorneys Inc</strong>, we understand that constitutional matters often involve fundamental rights and principles that affect individuals and communities. These cases require careful legal analysis and a strong understanding of constitutional law.
-                        </p>
-                        <p>
-                            We provide strategic advice and representation in matters where constitutional rights are at issue, ensuring that our clients’ rights are protected and upheld in accordance with the law.
-                        </p>
-                    </div>
-                     {{-- Services Included Section --}}
-                    <div class="mt-12" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex items-center gap-4 mb-8">
-                            <h3 class="text-xl font-bold text-black whitespace-nowrap">Our Constitutional Litigation Services Include</h3>
-                            <div class="h-[1px] flex-grow bg-gray-200"></div>
-                        </div>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8">
-                            @php
-                                $Services = [
-                                    'Enforcement of constitutional rights',
-                                    'Judicial review applications',
-                                    'Administrative law challenges',
-                                    'Human rights-related litigation',
-                                    'Constitutional damages claims',
-                                    'Challenges to the validity of legislation or government action',
-                                    'Public interest litigation matters'
-                                ];
-                            @endphp
-                    
-                            @foreach($Services as $service)
-                                <li class="flex items-start gap-4 text-gray-700 group">
-                                    {{-- Shaded Yellow Circle with Primary Color Tick --}}
-                                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[var(--accent)] flex items-center justify-center mt-1 shadow-sm">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 stroke-[var(--primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
-                                        </svg>
+
+                        {{-- Specialized Services Grid --}}
+                        <div class="mt-16 bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-up">
+                            <div class="flex items-center gap-4 mb-10">
+                                <h3 class="text-2xl font-bold text-black">Our Expertise</h3>
+                                <div class="h-px flex-grow bg-slate-100"></div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                @php
+                                    $offerings = [
+                                        [
+                                            'title' => 'Bill of Rights Defense', 
+                                            'desc' => 'Litigating infringements on the right to equality, dignity, and freedom from unfair discrimination.'
+                                        ],
+                                        [
+                                            'title' => 'Administrative Law (PAJA)', 
+                                            'desc' => 'Judicial reviews of government decisions to ensure they are lawful, reasonable, and procedurally fair.'
+                                        ],
+                                        [
+                                            'title' => 'State Liability Claims', 
+                                            'desc' => 'Holding government departments and organs of state accountable for damages and legal breaches.'
+                                        ],
+                                        [
+                                            'title' => 'Access to Information', 
+                                            'desc' => 'Handling PAIA requests and litigation to ensure transparency and access to vital records.'
+                                        ],
+                                    ];
+                                @endphp
+
+                                @foreach($offerings as $item)
+                                    <div class="flex gap-4 group">
+                                        <div class="w-12 h-12 flex-shrink-0 bg-slate-50 rounded-xl flex items-center justify-center group-hover:bg-[#bb942f]/10 transition-colors">
+                                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#bb942f]"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-black mb-1">{{ $item['title'] }}</h4>
+                                            <p class="text-sm text-slate-500">{{ $item['desc'] }}</p>
+                                        </div>
                                     </div>
-                                    <span class="text-base leading-tight">{{ $service }}</span>
-                                </li>
-                            @endforeach
-                        </ul>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-slate-100 pt-12">
+                            <div>
+                                <h4 class="font-bold text-black mb-2">Proximity to the High Courts</h4>
+                                <p class="text-sm text-slate-500">Located in Kempton Park, we are strategically positioned to serve clients across the Gauteng division, with easy access to the High Courts in Johannesburg and Pretoria.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black mb-2">Administrative Justice</h4>
+                                <p class="text-sm text-slate-500">We specialize in holding municipalities and state organs in Gauteng accountable to the constitutional standards of the Republic.</p>
+                            </div>
+                        </div>
+                        {{-- Bottom Callout --}}
+                        <div class="mt-16 p-8 rounded-3xl bg-slate-50 border-l-4 border-[#bb942f]" data-aos="fade-up">
+                            <p class="text-slate-700 italic text-lg leading-relaxed">
+                                "At Sehunane Attorneys Inc, we don't just interpret the law; we defend the constitutional foundation upon which our democracy and your rights are built."
+                            </p>
+                        </div>
                     </div>
-                    
-                   
-                    <div class="mt-12 max-w-4xl" data-aos="fade-up" data-aos-delay="400">
-                        <p class="text-gray-700 leading-relaxed text-base">
-                            At <strong>Sehunane Attorneys Inc</strong>, we are committed to upholding and protecting the constitutional rights of our clients. Whether you are challenging the exercise of public power or seeking to enforce your fundamental rights, we provide clear guidance, strategic representation, and dedicated legal support to ensure your rights are fully protected under the law.
-                        </p>
-                    </div>
-                </div>
-            </main>
+                </main>
+
+                
+
+            </div>
         </div>
     </div>
 @endsection
-@push('scripts')
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const toggles = document.querySelectorAll('.faq-toggle');
-        
-        toggles.forEach(toggle => {
-            toggle.addEventListener('click', function() {
-                const item = this.parentElement;
-                const answer = item.querySelector('.faq-answer');
-                const icon = this.querySelector('.faq-icon');
-                const questionText = this.querySelector('.faq-question');
-                
-                const isOpen = !answer.classList.contains('hidden');
-
-                // Reset this item
-                if (isOpen) {
-                    // Back to Inactive State
-                    answer.classList.add('hidden');
-                    this.classList.remove('bg-[var(--accent)]', 'text-white');
-                    this.classList.add('bg-[#F7F7F7]');
-                    questionText.classList.remove('text-white');
-                    questionText.classList.add('text-[var(--accent)]');
-                    icon.classList.remove('text-white', 'rotate-0');
-                    icon.classList.add('text-[var(--accent)]', 'rotate-180');
-                } else {
-                    // Set to Active State 
-                    answer.classList.remove('hidden');
-                    this.classList.remove('bg-[#F7F7F7]');
-                    this.classList.add('bg-[var(--accent)]');
-                    questionText.classList.remove('text-[var(--accent)]');
-                    questionText.classList.add('text-white');
-                    icon.classList.remove('text-[var(--accent)]', 'rotate-180');
-                    icon.classList.add('text-white', 'rotate-0');
-                }
-            });
-        });
-    });
-</script>
-@endpush

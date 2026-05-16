@@ -3,9 +3,7 @@
 @section('title', 'Contact Us | Sehunane Attorneys Inc Kempton Park Office')
 @section('meta_description', 'Need legal advice? Contact Sehunane Attorneys Inc today. Visit our Kempton Park office or schedule a consultation online for expert legal assistance.')
 
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-@endpush
+
 @section('content')
     @if (session('success'))
         <div class="mb-4 p-4 bg-green-100 text-green-800 rounded">
@@ -106,7 +104,7 @@
                                         </svg>
                                         <div>
                                             <h4 class="font-semibold text-black text-sm mb-2">Phone Number</h4>
-                                            <p class="text-slate-600 text-[13px]">+27 (555) 123-4567</p>
+                                            <p class="text-slate-600 text-[13px]">+27 (603) 561-780</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start space-x-3">
@@ -349,22 +347,25 @@
             // --- 1. WHATSAPP LOGIC ---
             function sendToWhatsApp() {
                 const name = document.getElementById('name').value.trim();
-                const subject = document.getElementById('subject').value.trim();
                 const message = document.getElementById('message').value.trim();
                 const phone = document.getElementById('phone').value.trim();
-    
-                if (!name || !subject || !message) {
-                    Swal.fire({ icon: 'warning', title: 'Missing Info', text: 'Please fill in Name, Subject, and Message first!' });
+            
+                if (!name || !message) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Missing Info',
+                        text: 'Please fill in Name and Message first!'
+                    });
                     return;
                 }
-    
+            
                 const whatsappNumber = "27603561780";
+            
                 const text = `*New Consultation Request*%0A` +
                              `*From:* ${encodeURIComponent(name)}%0A` +
-                             `*Subject:* ${encodeURIComponent(subject)}%0A` +
                              `*Phone:* ${encodeURIComponent(phone)}%0A` +
                              `*Message:* ${encodeURIComponent(message)}`;
-    
+            
                 window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
             }
     
