@@ -19,12 +19,12 @@
     <meta property="og:description" content="Comprehensive legal solutions in Kempton Park. 100% Black-Owned and committed to justice.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ asset('images/sehunane_logo.png') }}">
+    <meta property="og:image" content="">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title', 'Sehunane Attorneys Inc')">
 
-    <link rel="icon" href="{{ asset('images/sehunane_logo.png') }}">
+    <link rel="icon" href="">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
           "name": "Sehunane Attorneys Inc",
           "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, and Corporate law.",
           "url": "{{ url('/') }}",
-          "logo": "{{ asset('images/sehunane_logo.png') }}",
+          "logo": "",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "11 Monument Road, 302A Closemore Building ",
