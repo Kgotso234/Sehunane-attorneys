@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     
     <meta name="google-site-verification" content="pOnpcic50oFPhvEZE-xBxk4hh8NvkzIYj8LEI4Ex7UE" />
 
-    <title>@yield('title', 'Sehunane Attorneys Inc | Full-Service Law Firm in Kempton Park')</title>
+    <title><?php echo $__env->yieldContent('title', 'Sehunane Attorneys Inc | Full-Service Law Firm in Kempton Park'); ?></title>
 
-    <meta name="description" content="@yield('meta_description', 'Sehunane Attorneys Inc is a 100% Black-Owned law firm in Kempton Park. We provide comprehensive legal services in Labour, Criminal, Family, and Corporate Law to protect your future.')">
+    <meta name="description" content="<?php echo $__env->yieldContent('meta_description', 'Sehunane Attorneys Inc is a 100% Black-Owned law firm in Kempton Park. We provide comprehensive legal services in Labour, Criminal, Family, and Corporate Law to protect your future.'); ?>">
 
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="canonical" href="<?php echo e(url()->current()); ?>">
 
-    <meta property="og:title" content="@yield('title', 'Sehunane Attorneys Inc | Legal Excellence')">
+    <meta property="og:title" content="<?php echo $__env->yieldContent('title', 'Sehunane Attorneys Inc | Legal Excellence'); ?>">
     <meta property="og:description" content="Comprehensive legal solutions in Kempton Park. 100% Black-Owned and committed to justice.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:url" content="<?php echo e(url()->current()); ?>">
     <meta property="og:image" content="">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('title', 'Sehunane Attorneys Inc')">
+    <meta name="twitter:title" content="<?php echo $__env->yieldContent('title', 'Sehunane Attorneys Inc'); ?>">
 
     <link rel="icon" href="">
 
@@ -30,17 +30,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Commissioner:wght@400;700&family=Cormorant+Upright:wght@500;700&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    @stack('styles')
+    <?php echo $__env->yieldPushContent('styles'); ?>
     
     <script type="application/ld+json">
         {
-          "@@context": "https://schema.org",
-          "@@type": "LegalService",
+          "@context": "https://schema.org",
+          "@type": "LegalService",
           "name": "Sehunane Attorneys Inc",
           "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, and Corporate law.",
-          "url": "{{ url('/') }}",
+          "url": "<?php echo e(url('/')); ?>",
           "logo": "",
           "address": {
             "@type": "PostalAddress",
@@ -65,15 +65,15 @@
     
 <body>
     <div class="flex flex-col min-h-screen">
-        @include('partials.navbar')
+        <?php echo $__env->make('partials.navbar', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
         <main>
-            @yield('content')
+            <?php echo $__env->yieldContent('content'); ?>
             
         </main>
-        @include('modals.contact')
-        @include('partials.footer')
-        @include('partials.whatsapp-button')
+        <?php echo $__env->make('modals.contact', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+        <?php echo $__env->make('partials.footer', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+        <?php echo $__env->make('partials.whatsapp-button', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
     </div>
     
     <div id="page-loader"
@@ -132,7 +132,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    @stack('scripts')
+    <?php echo $__env->yieldPushContent('scripts'); ?>
     <script>
         
         AOS.init({
@@ -168,3 +168,4 @@
 </html>
 
 
+<?php /**PATH C:\xampp\htdocs\sehunane Att\resources\views/layouts/app.blade.php ENDPATH**/ ?>

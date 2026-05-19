@@ -6,3 +6,6 @@
 
 <hr>
 <p>{{ $data['message'] }}</p>
+
+
+

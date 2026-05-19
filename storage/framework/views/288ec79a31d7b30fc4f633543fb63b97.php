@@ -1,23 +1,24 @@
-@extends('layouts.app')
 
-@section('title', 'Contact Us | Sehunane Attorneys Inc Kempton Park Office')
-@section('meta_description', 'Need legal advice? Contact Sehunane Attorneys Inc today. Visit our Kempton Park office or schedule a consultation online for expert legal assistance.')
 
-@section('content')
-    {{-- Success alert container for AJAX submissions --}}
+<?php $__env->startSection('title', 'Contact Us | Sehunane Attorneys Inc Kempton Park Office'); ?>
+<?php $__env->startSection('meta_description', 'Need legal advice? Contact Sehunane Attorneys Inc today. Visit our Kempton Park office or schedule a consultation online for expert legal assistance.'); ?>
+
+<?php $__env->startSection('content'); ?>
+    
     <div id="flash-message" class="hidden mb-4 p-4 bg-green-100 text-green-800 rounded container mx-auto px-4 mt-4"></div>
 
-    @if (session('success'))
+    <?php if(session('success')): ?>
         <div class="mb-4 p-4 bg-green-100 text-green-800 rounded container mx-auto px-4 mt-4">
-            {{ session('success') }}
+            <?php echo e(session('success')); ?>
+
         </div>
-    @endif
+    <?php endif; ?>
 
     <div class="min-h-screen">
-        {{-- header --}}
+        
         <section class="relative h-[250px] flex items-center">
             <div class="absolute inset-0 overflow-hidden">
-                <img src="{{ asset('images/law-firm-1.jpg') }}" alt="about-img" class="w-full h-full object-cover">
+                <img src="<?php echo e(asset('images/law-firm-1.jpg')); ?>" alt="about-img" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-[#212529] opacity-70"></div>
             </div>
             <div class="container mx-auto px-4 relative z-10">
@@ -27,7 +28,7 @@
             </div>
         </section>
 
-        {{-- main content --}}
+        
         <section class="py-20 overflow-hidden">
             <div class="container mx-auto px-4">
                 <div class="max-w-7xl max-lg:max-w-3xl mx-auto p-4 md:p-8">
@@ -36,41 +37,10 @@
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">Get in touch</h2>
                             <p class="text-slate-600 text-[15px] mb-8 leading-relaxed">Feel free to contact us and we will get back to you as soon as possible</p>
                             <div class="space-y-6">
-                                <form id="contactForm" action="{{ route('contact.send') }}" method="POST">
-                                    @csrf
-                                    {{-- Hidden field to satisfy validation for standard email subject --}}
-                                    <div class="mb-4">
-                                            <label class="text-slate-900 text-sm font-medium mb-2 block">Subject *</label>
-
-                                            <select id="subjectSelect"
-                                                    name="subject"
-                                                    onchange="toggleCustomSubject()"
-                                                    required
-                                                    class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-sm text-slate-900 focus:border-indigo-500 outline-0">
-
-                                                <option value="">Select a service</option>
-
-                                                <option value="Constitutional Litigation">Constitutional Litigation</option>
-                                                <option value="Commercial Law">Commercial Law</option>
-                                                <option value="Civil Litigation">Civil Litigation</option>
-                                                <option value="Criminal Law">Criminal Law</option>
-                                                <option value="Labour Law">Labour Law</option>
-                                                <option value="Property & Conveyancing">Property & Conveyancing</option>
-                                                <option value="Third Party Claims">Third Party Claims</option>
-                                                <option value="Other">Other (Specify)</option>
-                                            </select>
-                                        </div>
-
-                                        <!-- Custom subject input -->
-                                        <div class="mb-4 hidden" id="customSubjectBox">
-                                            <label class="text-slate-900 text-sm font-medium mb-2 block">Specify Subject *</label>
-
-                                            <input type="text"
-                                                id="custom_subject"
-                                                class="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-sm text-slate-900 focus:border-indigo-500 outline-0"
-                                                placeholder="Type your enquiry service..." />
-                                        </div>
-                                    </div>
+                                <form id="contactForm" action="<?php echo e(route('contact.send')); ?>" method="POST">
+                                    <?php echo csrf_field(); ?>
+                                    
+                                    <input type="hidden" name="subject" id="subject" value="Website Legal Inquiry">
 
                                     <div class="mb-4">
                                         <label class="text-slate-900 text-sm font-medium mb-2 block">Name *</label>
@@ -142,9 +112,7 @@
                                             <p class="text-slate-600 text-[13px] mt-0.5">302A Closemore Building</p>
                                             <p class="text-slate-600 text-[13px] mt-0.5">Kempton Park, Gauteng</p>
                                             <p class="text-slate-600 text-[13px] mt-0.5">1620</p>
-                                            {{-- <a href="https://maps.app.goo.gl/cuubXDoE71fhpmxm9" target="_blank" class="text-md text-[var(--accent)] hover:underline text-sm mt-2 inline-block">
-                                                Get Directions →
-                                            </a> --}}
+                                            
                                         </div>
                                         
                                     </div>
@@ -195,7 +163,7 @@
                 </div>
             </div>
         </section>
-        {{-- map section --}}
+        
         <section class="w-full h-[500px]">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!4v1762641861187!6m8!1m7!1smGMT31tkEX559zWKVvlR6A!2m2!1d-26.10304098468086!2d28.23234625263074!3f321.5256585026408!4f-1.614283502728867!5f0.7820865974627469"
@@ -206,7 +174,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
-        {{-- FAQ Section --}}
+        
         <section class="py-20 bg-gray-50">
             <div class="max-w-screen-xl mx-auto p-4">
                 <div class="mb-12 max-w-4xl">
@@ -217,7 +185,7 @@
                 </div>
 
                 <div class="grid lg:grid-cols-2 gap-6">
-                    {{-- Left Column --}}
+                    
                     <div class="space-y-6">
                         <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2">General Services & Consultations</h3>
                         
@@ -308,7 +276,7 @@
                         </div>
                     </div>
 
-                    {{-- Right Column --}}
+                    
                     <div class="space-y-6">
                         <h3 class="text-lg font-bold text-[#bb942f] border-b pb-2">Debt Collection & Property</h3>
                         
@@ -374,155 +342,102 @@
             </div>
         </section>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@push('scripts')
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<?php $__env->startPush('scripts'); ?>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script>
-/* ----------------------------
-   TOAST CONFIG
------------------------------*/
-const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 4000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer);
-        toast.addEventListener('mouseleave', Swal.resumeTimer);
-    }
-});
-
-/* ----------------------------
-   SUBJECT HANDLER
------------------------------*/
-function toggleCustomSubject() {
-    const select = document.getElementById('subjectSelect');
-    const customBox = document.getElementById('customSubjectBox');
-    const customInput = document.getElementById('custom_subject');
-
-    if (select.value === 'Other') {
-        customBox.classList.remove('hidden');
-        customInput.setAttribute('required', true);
-    } else {
-        customBox.classList.add('hidden');
-        customInput.removeAttribute('required');
-        customInput.value = '';
-    }
-}
-
-/* ----------------------------
-   WHATSAPP SEND
------------------------------*/
-function sendToWhatsApp() {
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    const subjectSelect = document.getElementById('subjectSelect').value;
-    const customSubject = document.getElementById('custom_subject')?.value?.trim();
-
-    let subject = subjectSelect === 'Other' ? customSubject : subjectSelect;
-
-    if (!name || !phone || !email || !message || !subject) {
-        Toast.fire({
-            icon: 'warning',
-            title: 'Please complete all required fields'
+    <script>
+        // Initialize the SweetAlert Toast configuration mixin
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 4000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
         });
-        return;
-    }
 
-    const formattedMessage =
-        `Hello Sehunane Attorneys,%0A%0A` +
-        `*Name:* ${encodeURIComponent(name)}%0A` +
-        `*Phone:* ${encodeURIComponent(phone)}%0A` +
-        `*Email:* ${encodeURIComponent(email)}%0A` +
-        `*Subject:* ${encodeURIComponent(subject)}%0A` +
-        `*Message:* ${encodeURIComponent(message)}`;
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
-    const whatsappNumber = "27603561780";
+            if(!name || !phone || !email || !message) {
+                Toast.fire({
+                    icon: 'warning',
+                    title: 'Please fill out all required fields.'
+                });
+                return;
+            }
 
-    window.open(
-        `https://wa.me/${whatsappNumber}?text=${formattedMessage}`,
-        '_blank'
-    );
-}
-
-/* ----------------------------
-   EMAIL SEND (FIXED)
------------------------------*/
-function sendToEmail() {
-    const form = document.getElementById('contactForm');
-    const btn = document.getElementById('emailSubmitBtn');
-    const btnText = document.getElementById('btnText');
-
-    if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-    }
-
-    const subjectSelect = document.getElementById('subjectSelect').value;
-    const customSubject = document.getElementById('custom_subject')?.value?.trim();
-
-    let finalSubject = subjectSelect === 'Other'
-        ? customSubject
-        : subjectSelect;
-
-    if (!finalSubject) {
-        Toast.fire({
-            icon: 'warning',
-            title: 'Please select a subject'
-        });
-        return;
-    }
-
-    // Inject subject into hidden field for Laravel
-    document.getElementById('subject').value = finalSubject;
-
-    // UI loading state
-    btn.disabled = true;
-    btnText.innerText = 'Sending...';
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-        method: 'POST',
-        headers: {
-            'X-Requested-With': 'XMLHttpRequest',
-            'Accept': 'application/json'
-        },
-        body: formData
-    })
-    .then(async (response) => {
-        const data = await response.json().catch(() => null);
-
-        if (response.ok && data?.success) {
-            Toast.fire({
-                icon: 'success',
-                title: data.message || 'Message sent successfully'
-            });
-
-            form.reset();
-            toggleCustomSubject(); // reset UI state
-        } else {
-            throw new Error(data?.message || 'Request failed');
+            const formattedMessage = `Hello Sehunane Attorneys,%0A%0A` +
+                                     `*Name:* ${encodeURIComponent(name)}%0A` +
+                                     `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                                     `*Email:* ${encodeURIComponent(email)}%0A` +
+                                     `*Message:* ${encodeURIComponent(message)}`;
+            
+            const whatsappNumber = "27603561780";
+            window.open(`https://wa.me/${whatsappNumber}?text=${formattedMessage}`, '_blank');
         }
-    })
-    .catch((error) => {
-        console.error(error);
 
-        Toast.fire({
-            icon: 'error',
-            title: 'Failed to send message. Please try again.'
-        });
-    })
-    .finally(() => {
-        btn.disabled = false;
-        btnText.innerText = 'Send via Email';
-    });
-}
-</script>
-@endpush
+        function sendToEmail() {
+            const form = document.getElementById('contactForm');
+            const btn = document.getElementById('emailSubmitBtn');
+            const btnText = document.getElementById('btnText');
+            
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Visual loading feedback
+            btn.disabled = true;
+            btnText.innerText = 'Sending...';
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Fire beautiful success toast
+                    Toast.fire({
+                        icon: 'success',
+                        title: 'Your message has been sent successfully!'
+                    });
+                    
+                    form.reset();
+                } else {
+                    // Fire validation or server error toast
+                    Toast.fire({
+                        icon: 'error',
+                        title: 'Something went wrong. Please check your inputs and try again.'
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                Toast.fire({
+                    icon: 'error',
+                    title: 'An error occurred while transmitting your message.'
+                });
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btnText.innerText = 'Send via Email';
+            });
+        }
+    </script>
+<?php $__env->stopPush(); ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\sehunane Att\resources\views/pages/contact.blade.php ENDPATH**/ ?>
