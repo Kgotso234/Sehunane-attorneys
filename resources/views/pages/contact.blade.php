@@ -116,7 +116,7 @@
                                     </div>
 
                                     {{-- BUTTONS --}}
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 pt-2">
                                         <button type="button"
                                                 onclick="sendToWhatsApp()"
                                                 class="w-full flex items-center justify-center gap-2 text-sm bg-[#25D366] hover:bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg transition-colors">
