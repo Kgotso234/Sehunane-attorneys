@@ -28,11 +28,11 @@
 
         <div class="container mx-auto px-4 py-16 lg:py-24">
             <div class="flex flex-col lg:flex-row gap-16">
-                {{-- Left Sidebar: Sticky & Modern --}}
+                
                 <aside class="lg:w-1/3">
                     <div class="sticky top-24 space-y-8">
                         
-                        {{-- Practice Areas Menu --}}
+                        
                         <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100">
                             <div class="p-6 bg-[#36251e] text-white">
                                 <h2 class="text-lg font-bold flex items-center gap-3">
@@ -67,7 +67,7 @@
                             </nav>
                         </div>
 
-                        {{-- Dynamic Contact Card --}}
+                     
                         <div class="bg-gradient-to-br from-[#36251e] to-[#241914] rounded-2xl p-8 text-white relative overflow-hidden group shadow-2xl">
                             <i data-lucide="shield-check" class="absolute -right-4 -top-4 w-32 h-32 text-white/5 rotate-12 transition-transform group-hover:scale-110"></i>
                             
@@ -102,7 +102,7 @@
                             </div>
                         </div>
 
-                        {{-- Specialized Services Grid --}}
+                       
                         <div class="mt-16 bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-up">
                             <div class="flex items-center gap-4 mb-10">
                                 <h3 class="text-2xl font-bold text-black">Our Expertise</h3>
@@ -154,7 +154,6 @@
                                 <p class="text-sm text-slate-500">We specialize in holding municipalities and state organs in Gauteng accountable to the constitutional standards of the Republic.</p>
                             </div>
                         </div>
-                        {{-- Bottom Callout --}}
                         <div class="mt-16 p-8 rounded-3xl bg-slate-50 border-l-4 border-[#bb942f]" data-aos="fade-up">
                             <p class="text-slate-700 italic text-lg leading-relaxed">
                                 "At Sehunane Attorneys Inc, we don't just interpret the law; we defend the constitutional foundation upon which our democracy and your rights are built."

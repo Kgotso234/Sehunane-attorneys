@@ -59,6 +59,7 @@
     .heading {
         font-family: var(--font-lora);
     }
+    
 }
 
 @layer base {
@@ -81,3 +82,35 @@
 
     
 } 
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@layer components {
+
+    .skeleton {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        background-color: #e5e7eb;
+    }
+
+    .skeleton::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        transform: translateX(-100%);
+
+        background-image: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.5),
+            transparent
+        );
+
+        animation: shimmer 1.5s infinite;
+    }
+
+}

@@ -1,15 +1,13 @@
-@extends('layouts.app')
-
-@section('title', 'Commercial & Business Lawyers in Kempton Park | Sehunane Attorneys Inc')
-@section('meta_description', 'Specialized commercial law representation in Kempton Park. We handle business contracts, corporate transactions, and commercial disputes with professional excellence.')
+<?php $__env->startSection('title', 'Commercial & Business Lawyers in Kempton Park | Sehunane Attorneys Inc'); ?>
+<?php $__env->startSection('meta_description', 'Specialized commercial law representation in Kempton Park. We handle business contracts, corporate transactions, and commercial disputes with professional excellence.'); ?>
 
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 <div class="min-h-screen bg-[#fcfcfc]">
     
     <section class="relative h-[350px] flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('images/law-firm-1.jpg') }}" alt="Commercial Law" 
+            <img src="<?php echo e(asset('images/law-firm-1.jpg')); ?>" alt="Commercial Law" 
                  class="w-full h-full object-cover bg-zoom-slow">
             <div class="absolute inset-0 bg-gradient-to-r from-[#36251e] to-[#36251e]/60 opacity-90"></div>
         </div>
@@ -32,11 +30,11 @@
     <div class="container mx-auto px-4 py-16 lg:py-24">
         <div class="flex flex-col lg:flex-row gap-16">
             
-            {{-- Left Sidebar: Sticky & Modern --}}
+            
             <aside class="lg:w-1/3">
                 <div class="sticky top-24 space-y-8">
                     
-                    {{-- Practice Areas Menu --}}
+                    
                     <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100">
                         <div class="p-6 bg-[#36251e] text-white">
                             <h2 class="text-lg font-bold flex items-center gap-3">
@@ -45,7 +43,7 @@
                             </h2>
                         </div>
                         <nav class="p-2">
-                            @php
+                            <?php
                                 $services = [
                                     ['route' => 'services.labour', 'label' => 'Labour Law'],
                                     ['route' => 'services.litigation', 'label' => 'Civil Litigation'],
@@ -55,22 +53,22 @@
                                     ['route' => 'services.property', 'label' => 'Property & Conveyancing'],
                                     ['route' => 'services.third-party', 'label' => 'Third Party Claims'],
                                 ];
-                            @endphp
+                            ?>
 
-                            @foreach ($services as $service)
-                                <a href="{{ route($service['route']) }}"
+                            <?php $__currentLoopData = $services; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $service): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <a href="<?php echo e(route($service['route'])); ?>"
                                    class="group flex items-center justify-between px-4 py-4 rounded-xl transition-all duration-300 mb-1
-                                   {{ request()->routeIs($service['route']) 
+                                   <?php echo e(request()->routeIs($service['route']) 
                                       ? 'bg-[#bb942f] text-white shadow-lg shadow-[#bb942f]/20' 
-                                      : 'hover:bg-slate-50 text-slate-600 hover:text-black' }}">
-                                    <span class="font-bold text-sm">{{ $service['label'] }}</span>
-                                    <i data-lucide="arrow-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 {{ request()->routeIs($service['route']) ? 'opacity-100' : '' }} transition-all"></i>
+                                      : 'hover:bg-slate-50 text-slate-600 hover:text-black'); ?>">
+                                    <span class="font-bold text-sm"><?php echo e($service['label']); ?></span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 <?php echo e(request()->routeIs($service['route']) ? 'opacity-100' : ''); ?> transition-all"></i>
                                 </a>
-                            @endforeach
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </nav>
                     </div>
 
-                    {{-- Dynamic Contact Card --}}
+                    
                     <div class="bg-gradient-to-br from-[#36251e] to-[#241914] rounded-2xl p-8 text-white relative overflow-hidden group shadow-2xl">
                         <i data-lucide="help-circle" class="absolute -right-4 -top-4 w-32 h-32 text-white/5 rotate-12 transition-transform group-hover:scale-110"></i>
                         <h3 class="text-2xl font-bold mb-4 leading-tight relative z-10">Need Expert Commercial Advice?</h3>
@@ -85,7 +83,7 @@
                 </div>
             </aside>
 
-            {{-- Right Main Content --}}
+            
             <main class="lg:w-2/3">
                 <div class="prose prose-slate max-w-none">
                     <div class="mb-12" data-aos="fade-up">
@@ -105,7 +103,7 @@
                         </div>
                     </div>
 
-                    {{-- Specialized Services Grid --}}
+                    
                     <div class="mt-16 bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-up">
                         <div class="flex items-center gap-4 mb-10">
                             <h3 class="text-2xl font-bold text-black">Our Expertise</h3>
@@ -113,7 +111,7 @@
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            @php
+                            <?php
                                 $offerings = [
                                     [
                                         'title' => 'Contract Law & SLA', 
@@ -132,19 +130,19 @@
                                         'desc' => 'Partnership agreements, Shareholder agreements, and business formation for Kempton Park startups.'
                                     ],
                                 ];
-                            @endphp
+                            ?>
 
-                            @foreach($offerings as $item)
+                            <?php $__currentLoopData = $offerings; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <div class="flex gap-4 group">
                                     <div class="w-12 h-12 flex-shrink-0 bg-slate-50 rounded-xl flex items-center justify-center group-hover:bg-[#bb942f]/10 transition-colors">
                                         <i data-lucide="check-circle-2" class="w-6 h-6 text-[#bb942f]"></i>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold text-black mb-1">{{ $item['title'] }}</h4>
-                                        <p class="text-sm text-slate-500">{{ $item['desc'] }}</p>
+                                        <h4 class="font-bold text-black mb-1"><?php echo e($item['title']); ?></h4>
+                                        <p class="text-sm text-slate-500"><?php echo e($item['desc']); ?></p>
                                     </div>
                                 </div>
-                            @endforeach
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </div>
                     </div>
                     <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-slate-100 pt-12">
@@ -157,7 +155,7 @@
                             <p class="text-sm text-slate-500">Leverage our B-BBEE status and deep understanding of the South African regulatory environment to give your business a competitive edge.</p>
                         </div>
                     </div>
-                    {{-- Bottom Callout --}}
+                    
                     <div class="mt-16 p-8 rounded-3xl bg-slate-50 border-l-4 border-[#bb942f]" data-aos="fade-up">
                         <p class="text-slate-700 italic text-lg leading-relaxed">
                             "At Sehunane Attorneys Inc, we don't just provide legal advice; we provide the foundation for your business's future growth and security."
@@ -169,6 +167,8 @@
         </div>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
+
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\sehunane Att\resources\views/pages/services/commercial.blade.php ENDPATH**/ ?>

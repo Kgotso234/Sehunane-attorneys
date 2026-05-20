@@ -76,57 +76,9 @@
         <?php echo $__env->make('partials.whatsapp-button', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
     </div>
     
-    <div id="page-loader"
-        class="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-950/60 backdrop-blur-md transition-opacity duration-500">
+    
 
-        <div class="flex flex-col items-center space-y-6">
-
-            <!-- Glow ring loader -->
-            <div class="relative w-20 h-20 flex items-center justify-center">
-                <div class="absolute inset-0 rounded-full bg-amber-500/20 blur-xl animate-pulse"></div>
-
-                <div class="absolute inset-0 border-2 border-amber-500/20 rounded-full"></div>
-
-                <div class="absolute inset-0 border-2 border-transparent border-t-amber-400 rounded-full animate-spin"></div>
-
-                <div class="absolute inset-3 border-2 border-transparent border-b-white/70 rounded-full animate-[spin_1.2s_linear_infinite_reverse]"></div>
-            </div>
-
-            <!-- Text -->
-            <div class="text-center">
-                <p class="text-white font-semibold tracking-wide text-base">
-                    Sehunane Attorneys Inc.
-                </p>
-                <p class="text-xs text-white/60 mt-1">
-                    Securing your legal profile...
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const loader = document.getElementById("page-loader");
-
-            if (loader) {
-                loader.classList.add("opacity-0");
-
-                setTimeout(() => {
-                    loader.style.display = "none";
-                }, 500);
-            }
-        });
-
-        window.addEventListener("beforeunload", () => {
-            const loader = document.getElementById("page-loader");
-
-            if (loader) {
-                loader.style.display = "flex";
-                loader.classList.remove("opacity-0");
-            }
-        });
-    </script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
