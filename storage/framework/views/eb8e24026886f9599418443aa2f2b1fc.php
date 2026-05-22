@@ -1,6 +1,8 @@
-<?php $__env->startSection('title', 'Commercial & Business Lawyers in Kempton Park | Sehunane Attorneys Inc'); ?>
-<?php $__env->startSection('meta_description', 'Specialized commercial law representation in Kempton Park. We handle business contracts, corporate transactions, and commercial disputes with professional excellence.'); ?>
+   
 
+
+<?php $__env->startSection('title', 'Divorce Lawyers & Matrimonial Restructuring in Kempton Park | Sehunane Attorneys Inc'); ?>
+<?php $__env->startSection('meta_description', 'Professional handling of contested and uncontested divorces, asset splits, and Rule 43 interim financial support applications in Kempton Park.'); ?>
 
 <?php $__env->startSection('content'); ?>
     <div id="page-skeleton">
@@ -8,9 +10,10 @@
     </div>
     <div id="page-content" class="hidden">
         <div class="min-h-screen bg-[#fcfcfc]">
+            
             <section class="relative h-[350px] flex items-center overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <img src="<?php echo e(asset('images/law-firm-1.jpg')); ?>" alt="Commercial Law" 
+                    <img src="<?php echo e(asset('images/law-firm-1.jpg')); ?>" alt="Divorce Law" 
                         class="w-full h-full object-cover bg-zoom-slow">
                     <div class="absolute inset-0 bg-gradient-to-r from-[#36251e] to-[#36251e]/60 opacity-90"></div>
                 </div>
@@ -21,13 +24,15 @@
                         <i data-lucide="chevron-right" class="w-4 h-4"></i>
                         <span class="text-white/60">Services</span>
                         <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                        <span class="text-white">Commercial Law</span>
+                        <span class="text-white">Divorce Law</span>
                     </nav>
                     <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight">
-                        Commercial & <span class="text-[#bb942f]">Business Law</span> Kempton Park
+                        Divorce & <span class="text-[#bb942f]">Matrimonial Law</span> Kempton Park
                     </h1>
                 </div>
             </section>
+
+        
             <div class="container mx-auto px-4 py-16 lg:py-24">
                 <div class="flex flex-col lg:flex-row gap-16">
                     
@@ -49,10 +54,11 @@
                                             ['route' => 'services.labour', 'label' => 'Labour Law'],
                                             ['route' => 'services.litigation', 'label' => 'Civil Litigation'],
                                             ['route' => 'services.commercial', 'label' => 'Commercial Law'],
+                                            ['route' => 'services.family', 'label' => 'Family Law'],
+                                            ['route' => 'services.divorce', 'label' => 'Divorce Law'],
+                                            ['route' => 'services.estates', 'label' => 'Deceased Estates'],
                                             ['route' => 'services.criminal', 'label' => 'Criminal Law'],
-                                            ['route' => 'services.constitutional', 'label' => 'Constitutional Litigation'],
                                             ['route' => 'services.property', 'label' => 'Property & Conveyancing'],
-                                            ['route' => 'services.third-party', 'label' => 'Third Party Claims'],
                                             ['route' => 'services.family-law', 'label' => 'Family Law'],
                                             ['route' => 'services.divorce-law', 'label' => 'Divorce Law'],
                                             ['route' => 'services.decease-estate', 'label' => 'Decease & Estate Planning'],
@@ -75,13 +81,13 @@
                             
                             <div class="bg-gradient-to-br from-[#36251e] to-[#241914] rounded-2xl p-8 text-white relative overflow-hidden group shadow-2xl">
                                 <i data-lucide="help-circle" class="absolute -right-4 -top-4 w-32 h-32 text-white/5 rotate-12 transition-transform group-hover:scale-110"></i>
-                                <h3 class="text-2xl font-bold mb-4 leading-tight relative z-10">Need Expert Commercial Advice?</h3>
+                                <h3 class="text-2xl font-bold mb-4 leading-tight relative z-10">Facing Matrimonial Structural Shifts?</h3>
                                 <p class="text-white/70 text-sm mb-8 relative z-10 leading-relaxed">
-                                    Our team in Kempton Park is ready to protect your business interests. Reach out for a consultation.
+                                    Protect your financial independence and personal assets during a divorce. Contact our specialists for a confidential consultation.
                                 </p>
-                                <a href="tel:0720621529" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300">
+                                <a href="tel:0603561780" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300">
                                     <i data-lucide="phone-call" class="w-5 h-5"></i>
-                                    Call 072 062 1529
+                                    Call 060 356 1780
                                 </a>
                             </div>
                         </div>
@@ -92,17 +98,13 @@
                         <div class="prose prose-slate max-w-none">
                             <div class="mb-12" data-aos="fade-up">
                                 <span class="text-[#bb942f] font-bold uppercase tracking-widest text-xs">Overview</span>
-                                <h2 class="text-3xl md:text-4xl font-bold text-black mt-2 mb-6">Strategic Legal Solutions for Modern Businesses</h2>
+                                <h2 class="text-3xl md:text-4xl font-bold text-black mt-2 mb-6">Objective Counsel for Complex Marital Dissolutions</h2>
                                 <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
                                     <p>
-                                        Our expertise covers the full spectrum of </strong>South African commercial law</strong>, 
-                                        ensuring your enterprise remains compliant with the </strong>Companies Act 71 of 2008</strong and the </strong> Consumer Protection Act (CPA)</strong>. At <strong>Sehunane Attorneys Inc</strong>, 
-                                        we understand that businesses in </strong> Kempton Park and Gauteng</strong> require practical 
-                                        legal solutions that support growth.
+                                        Dissolving a marriage requires objective, high-tier legal representation to safeguard your future financial standing. Whether your separation is an amicable transition or a high-conflict dispute, our practice ensures your marital estate division aligns with the regulations of the <strong>Divorce Act 70 of 1979</strong>.
                                     </p>
-                    
                                     <p>
-                                        Legal uncertainty can affect operations, profitability, and reputation. We provide commercially sound legal advice tailored to your business needs, helping you manage risk and resolve disputes effectively.
+                                        At <strong>Sehunane Attorneys Inc</strong>, we evaluate the unique financial parameters of your marriage regime—whether married In Community of Property or Out of Community of Property with or without accrual. We manage your asset protection, retirement fund claims, and parental splits with absolute precision.
                                     </p>
                                 </div>
                             </div>
@@ -110,7 +112,7 @@
                             
                             <div class="mt-16 bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-up">
                                 <div class="flex items-center gap-4 mb-10">
-                                    <h3 class="text-2xl font-bold text-black">Our Expertise</h3>
+                                    <h3 class="text-2xl font-bold text-black">Our Divorce Services</h3>
                                     <div class="h-px flex-grow bg-slate-100"></div>
                                 </div>
 
@@ -118,20 +120,20 @@
                                     <?php
                                         $offerings = [
                                             [
-                                                'title' => 'Contract Law & SLA', 
-                                                'desc' => 'Drafting Service Level Agreements (SLA), non-disclosure agreements, and bespoke commercial contracts.'
+                                                'title' => 'Uncontested Divorces', 
+                                                'desc' => 'Fast-tracking amicable separations through mutually drafted settlement agreements. A cost-effective approach to asset distribution and child maintenance.'
                                             ],
                                             [
-                                                'title' => 'Corporate Governance', 
-                                                'desc' => 'Expert guidance on director duties, Memorandum of Incorporation (MOI), and Companies Act compliance.'
+                                                'title' => 'Contested Divorce Litigation', 
+                                                'desc' => 'Providing aggressive courtroom representation in high-dispute divorces involving concealed assets, complex corporate shares, or custody battles.'
                                             ],
                                             [
-                                                'title' => 'Dispute Resolution', 
-                                                'desc' => 'Strategic litigation and mediation for breach of contract and commercial partnership disputes.'
+                                                'title' => 'Rule 43 Interim Relief', 
+                                                'desc' => 'Filing fast-track applications for urgent, temporary maintenance orders, ongoing medical aid contributions, and legal fee subsidies while a divorce is pending.'
                                             ],
                                             [
-                                                'title' => 'Business Structuring', 
-                                                'desc' => 'Partnership agreements, Shareholder agreements, and business formation for Kempton Park startups.'
+                                                'title' => 'Spousal Maintenance Claims', 
+                                                'desc' => 'Assessing or defending claims for rehabilitative or permanent spousal support based on duration of marriage, age, and future earning capacity.'
                                             ],
                                         ];
                                     ?>
@@ -149,20 +151,22 @@
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 </div>
                             </div>
+
                             <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-slate-100 pt-12">
                                 <div>
-                                    <h4 class="font-bold text-black mb-2">Serving Kempton Park Businesses</h4>
-                                    <p class="text-sm text-slate-500">From the industrial hubs near OR Tambo to local retail enterprises, we provide the legal backbone for the Kempton Park business community.</p>
+                                    <h4 class="font-bold text-black mb-2">Asset & Pension Protection</h4>
+                                    <p class="text-sm text-slate-500">We specialize in securing endorsements against pension and provident funds, ensuring your legal entitlement to marital assets is technically secure and paid out correctly.</p>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-black mb-2">100% Black-Owned Expertise</h4>
-                                    <p class="text-sm text-slate-500">Leverage our B-BBEE status and deep understanding of the South African regulatory environment to give your business a competitive edge.</p>
+                                    <h4 class="font-bold text-black mb-2">Strategic High Court Advocacy</h4>
+                                    <p class="text-sm text-slate-500">From local regional jurisdictions to the High Courts of Johannesburg and Pretoria, our multi-disciplinary litigation team manages complex asset splitting effectively.</p>
                                 </div>
                             </div>
+
                             
                             <div class="mt-16 p-8 rounded-3xl bg-slate-50 border-l-4 border-[#bb942f]" data-aos="fade-up">
                                 <p class="text-slate-700 italic text-lg leading-relaxed">
-                                    "At Sehunane Attorneys Inc, we don't just provide legal advice; we provide the foundation for your business's future growth and security."
+                                    "A successful divorce settlement does not mean winning an emotional battle; it means building a solid legal foundation that protects your independence and assets for the future."
                                 </p>
                             </div>
                         </div>
@@ -188,7 +192,4 @@
         });
     </script>
 <?php $__env->stopSection(); ?>
-
-
-
-<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\sehunane Att\resources\views/pages/services/commercial.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\sehunane Att\resources\views/pages/services/divorce-law.blade.php ENDPATH**/ ?>

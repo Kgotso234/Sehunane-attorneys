@@ -64,7 +64,7 @@
                                 <div class="flex items-center gap-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                                     <span class="text-xs bg-white/10 px-3 py-1 rounded border border-white/20 text-white font-mono">Case: PR 28/13</span>
                                     
-                                    <a href="https://www.saflii.org/za/cases/ZALCPE/2017/74.html" target="_blank" class="flex items-center gap-2 text-[var(--accent)] hover:text-white transition-colors text-sm font-bold">
+                                    <a href="https://www.saflii.org/za/cases/ZALCPE/2017/74.html&query=sehunane%20near%20attorneys" target="_blank" class="flex items-center gap-2 text-[var(--accent)] hover:text-white transition-colors text-sm font-bold">
                                         Read Full Judgment 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
@@ -92,7 +92,7 @@
                                 <div class="flex items-center gap-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                                     <span class="text-xs bg-white/10 px-3 py-1 rounded border border-white/20 text-white font-mono">Case: PS 29/2014</span>
                                     
-                                    <a href="https://www.saflii.org/za/cases/ZALCPE/2018/76.html" target="_blank" class="flex items-center gap-2 text-[var(--accent)] hover:text-white transition-colors text-sm font-bold">
+                                    <a href="https://www.saflii.org/cgi-bin/disp.pl?file=za/cases/ZALCPE/2017/25.html&query=sehunane%20near%20attorneys" target="_blank" class="flex items-center gap-2 text-[var(--accent)] hover:text-white transition-colors text-sm font-bold">
                                         Read Full Judgment 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
@@ -113,7 +113,7 @@
                                 </p>
                                 <div class="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                                     <span class="text-[10px] bg-white/10 px-2 py-1 rounded border border-white/20 text-white font-mono">Case: 1633/2015</span>
-                                    <a href="https://www.saflii.org/za/cases/ZALMPPHC/2017/14.html" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
+                                    <a href="https://www.saflii.org/za/cases/ZALMPPHC/2017/14.html&query=sehunane%20near%20attorneys" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
                                         Full Story <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
                                 </div>
@@ -133,7 +133,7 @@
                                 </p>
                                 <div class="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                                     <span class="text-[10px] bg-white/10 px-2 py-1 rounded border border-white/20 text-white font-mono">Case: JR 3506/09</span>
-                                    <a href="https://www.saflii.org/za/cases/ZALCJHB/2016/299.html" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
+                                    <a href="https://www.saflii.org/za/cases/ZALCJHB/2016/299.html&query=sehunane%20near%20attorneys" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
                                         Full Story <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
                                 </div>
@@ -153,7 +153,7 @@
                                 </p>
                                 <div class="flex items-center gap-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                                     <span class="text-xs bg-white/10 px-3 py-1 rounded border border-white/20 text-white font-mono">Case: 2022/059691</span>
-                                    <a href="https://www.saflii.org/za/cases/ZAGPJHC/2024/923.html" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-sm font-bold flex items-center gap-2">
+                                    <a href="https://www.saflii.org/cgi-bin/disp.pl?file=za/cases/ZAGPJHC/2024/607.html&query=sehunane%20near%20attorneys" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-sm font-bold flex items-center gap-2">
                                         View Judgment <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
                                 </div>
@@ -173,7 +173,7 @@
                                 </p>
                                 <div class="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                                     <span class="text-[10px] bg-white/10 px-2 py-1 rounded border border-white/20 text-white font-mono">Case: JR 2425/22</span>
-                                    <a href="https://www.saflii.org/za/cases/ZALCJHB/2025/71.html" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
+                                    <a href="https://www.saflii.org/za/cases/ZALCJHB/2025/71.html&query=sehunane%20near%20attorneys" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
                                         Full Story <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
                                 </div>
@@ -193,7 +193,7 @@
                                 </p>
                                 <div class="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                                     <span class="text-[10px] bg-white/10 px-2 py-1 rounded border border-white/20 text-white font-mono">Case: J2560/16</span>
-                                    <a href="https://www.saflii.org/za/cases/ZALCJHB/2017/294.html" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
+                                    <a href="https://www.saflii.org/za/cases/ZALCJHB/2017/294.html&query=sehunane%20near%20attorneys" target="_blank" class="text-[var(--accent)] hover:text-white transition-colors text-xs font-bold flex items-center gap-1">
                                         Full Story <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
                                 </div>

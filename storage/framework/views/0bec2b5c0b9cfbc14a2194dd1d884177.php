@@ -52,7 +52,7 @@
                 $services = [
                     [
                         'title' => 'Constitution Litigation',
-                        'slug' => 'constitutional-litigation',
+                        'slug' => 'Constitutional',
                         'icon' => 'building',
                         'description' => 'Expert guidance on constitutional rights, public law disputes, and administrative justice in South Africa.',
                         'img' => 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80',
@@ -60,7 +60,7 @@
                     ],
                     [
                         'title' => 'Commercial Law',
-                        'slug' => 'commercial-law',
+                        'slug' => 'commercial',
                         'icon' => 'briefcase',
                         'description' => 'Strategic legal support for business transactions, drafting agreements, and terms of trade.',
                         'img' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
@@ -76,7 +76,7 @@
                     ],
                     [
                         'title' => 'Criminal Law',
-                        'slug' => 'criminal-law',
+                        'slug' => 'criminal',
                         'icon' => 'gavel',
                         'description' => 'Dedicated criminal defense lawyers in Kempton Park ensuring your rights are upheld at every stage.',
                         'img' => 'https://images.unsplash.com/photo-1589578594224-4bb0124ddcd1?auto=format&fit=crop&w=1200&q=80',
@@ -84,10 +84,34 @@
                     ],
                     [
                         'title' => 'Labour Law',
-                        'slug' => 'labour-law',
+                        'slug' => 'labour',
                         'icon' => 'users',
                         'description' => 'Our signature expertise in CCMA representation and workplace rights.',
                         'img' => 'https://images.unsplash.com/photo-1521791136364-798a730bb361?auto=format&fit=crop&w=1200&q=80',
+                        'span' => 'md:col-span-4' // Small card
+                    ],
+                    [
+                        'title' => 'Family Law',
+                        'slug' => 'family-law',
+                        'icon' => 'heart',
+                        'description' => 'Professional guidance on child maintenance disputes, custom parenting plans, and protecting your domestic rights.',
+                        'img' => 'https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?auto=format&fit=crop&w=1200&q=80',
+                        'span' => 'md:col-span-5' // Medium card
+                    ],
+                    [
+                        'title' => 'Divorce Law',
+                        'slug' => 'divorce-law',
+                        'icon' => 'heart-off',
+                        'description' => 'Compassionate handling of contested or uncontested divorces, complex asset division, and Rule 43 interim orders.',
+                        'img' => 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80',
+                        'span' => 'md:col-span-7' // Large card
+                    ],
+                    [
+                        'title' => 'Deceased Estates',
+                        'slug' => 'decease-estate',
+                        'icon' => 'scroll',
+                        'description' => 'Dignified administration, winding up, and legal distribution of family estates under the Master of the High Court.',
+                        'img' => 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1200&q=80',
                         'span' => 'md:col-span-4' // Small card
                     ],
                     [
@@ -96,15 +120,15 @@
                         'icon' => 'home',
                         'description' => 'Expert assistance with property transfers and lease agreements.',
                         'img' => 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
-                        'span' => 'md:col-span-5' // Medium card
+                        'span' => 'md:col-span-4' // Small card
                     ],
                     [
                         'title' => 'Third Party Claims',
-                        'slug' => 'third-party-claims',
-                        'icon' => 'scroll',
+                        'slug' => 'third-party',
+                        'icon' => 'briefcase',
                         'description' => 'Specialized legal assistance for RAF claims and personal injury litigation in Gauteng.',
                         'img' => 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80',
-                        'span' => 'md:col-span-7' // Large card
+                        'span' => 'md:col-span-4' // Small card
                     ],
                 ];
             ?>

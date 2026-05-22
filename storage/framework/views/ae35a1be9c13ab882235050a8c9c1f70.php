@@ -39,7 +39,7 @@
           "@context": "https://schema.org",
           "@type": "LegalService",
           "name": "Sehunane Attorneys Inc",
-          "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, and Corporate law.",
+          "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, Divorce, and Corporate law.",
           "url": "<?php echo e(url('/')); ?>",
           "logo": "",
           "address": {

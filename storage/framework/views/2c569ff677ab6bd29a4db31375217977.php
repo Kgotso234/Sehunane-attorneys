@@ -91,6 +91,9 @@
                                     ['route' => 'services.labour', 'label' => 'Labour Law'],
                                     ['route' => 'services.property', 'label' => 'Property & Conveyancing'],
                                     ['route' => 'services.third-party', 'label' => 'Third Party Claims'],
+                                    ['route' => 'services.family-law', 'label' => 'Family Law'],
+                                    ['route' => 'services.divorce-law', 'label' => 'Divorce Law'],
+                                    ['route' => 'services.decease-estate', 'label' => 'Decease & Estate Planning'],
                                 ]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $service): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 
                                     <?php 
