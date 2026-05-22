@@ -50,14 +50,13 @@
                                 <nav class="p-2">
                                     @php
                                         $services = [
-                                            ['route' => 'services.labour', 'label' => 'Labour Law'],
                                             ['route' => 'services.litigation', 'label' => 'Civil Litigation'],
                                             ['route' => 'services.commercial', 'label' => 'Commercial Law'],
-                                            ['route' => 'services.family', 'label' => 'Family Law'],
-                                            ['route' => 'services.divorce', 'label' => 'Divorce Law'],
-                                            ['route' => 'services.estates', 'label' => 'Deceased Estates'],
+                                            ['route' => 'services.constitutional', 'label' => 'Constitutional Litigation'],
                                             ['route' => 'services.criminal', 'label' => 'Criminal Law'],
+                                            ['route' => 'services.labour', 'label' => 'Labour Law'],
                                             ['route' => 'services.property', 'label' => 'Property & Conveyancing'],
+                                            ['route' => 'services.third-party', 'label' => 'Third Party Claims'],
                                             ['route' => 'services.family-law', 'label' => 'Family Law'],
                                             ['route' => 'services.divorce-law', 'label' => 'Divorce Law'],
                                             ['route' => 'services.decease-estate', 'label' => 'Decease & Estate Planning'],
