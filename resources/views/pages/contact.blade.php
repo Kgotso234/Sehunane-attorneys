@@ -405,159 +405,178 @@
 @endsection
 
 @push('scripts')
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script>
-/* ----------------------------
-   TOAST CONFIG
------------------------------*/
-const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 4000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer);
-        toast.addEventListener('mouseleave', Swal.resumeTimer);
-    }
-});
-
-/* ----------------------------
-   SUBJECT HANDLER
------------------------------*/
-function toggleCustomSubject() {
-    const select = document.getElementById('subjectSelect');
-    const customBox = document.getElementById('customSubjectBox');
-    const customInput = document.getElementById('custom_subject');
-
-    if (select.value === 'Other') {
-        customBox.classList.remove('hidden');
-        customInput.setAttribute('required', true);
-    } else {
-        customBox.classList.add('hidden');
-        customInput.removeAttribute('required');
-        customInput.value = '';
-    }
-}
-
-/* ----------------------------
-   WHATSAPP SEND
------------------------------*/
-function sendToWhatsApp() {
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    const subjectSelect = document.getElementById('subjectSelect').value;
-    const customSubject = document.getElementById('custom_subject')?.value?.trim();
-
-    let subject = subjectSelect === 'Other' ? customSubject : subjectSelect;
-
-    if (!name || !phone || !email || !message || !subject) {
-        Toast.fire({
-            icon: 'warning',
-            title: 'Please complete all required fields'
+    <script>
+        /* ----------------------------
+        TOAST CONFIG
+        -----------------------------*/
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 4000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer);
+                toast.addEventListener('mouseleave', Swal.resumeTimer);
+            }
         });
-        return;
-    }
 
-    const formattedMessage =
-        `Hello Sehunane Attorneys,%0A%0A` +
-        `*Name:* ${encodeURIComponent(name)}%0A` +
-        `*Phone:* ${encodeURIComponent(phone)}%0A` +
-        `*Email:* ${encodeURIComponent(email)}%0A` +
-        `*Subject:* ${encodeURIComponent(subject)}%0A` +
-        `*Message:* ${encodeURIComponent(message)}`;
+        /* ----------------------------
+        SUBJECT HANDLER
+        -----------------------------*/
+        function toggleCustomSubject() {
+            const select = document.getElementById('subjectSelect');
+            const customBox = document.getElementById('customSubjectBox');
+            const customInput = document.getElementById('custom_subject');
 
-    const whatsappNumber = "27603561780";
-
-    window.open(
-        `https://wa.me/${whatsappNumber}?text=${formattedMessage}`,
-        '_blank'
-    );
-}
-
-/* ----------------------------
-   EMAIL SEND (FIXED)
------------------------------*/
-function sendToEmail() {
-    const form = document.getElementById('contactForm');
-    const btn = document.getElementById('emailSubmitBtn');
-    const btnText = document.getElementById('btnText');
-
-    if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-    }
-
-    const subjectSelect = document.getElementById('subjectSelect').value;
-    const customSubject = document.getElementById('custom_subject')?.value?.trim();
-
-    let finalSubject = subjectSelect === 'Other'
-        ? customSubject
-        : subjectSelect;
-
-    if (!finalSubject) {
-        Toast.fire({
-            icon: 'warning',
-            title: 'Please select a subject'
-        });
-        return;
-    }
-
-    // Inject subject into hidden field for Laravel
-    const subjectField = document.getElementById('subject');
-
-if (!subjectField) {
-    console.error('Hidden subject field is missing in the DOM');
-    return;
-}
-
-subjectField.value = finalSubject;
-
-    // UI loading state
-    btn.disabled = true;
-    btnText.innerText = 'Sending...';
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-        method: 'POST',
-        headers: {
-            'X-Requested-With': 'XMLHttpRequest',
-            'Accept': 'application/json'
-        },
-        body: formData
-    })
-    .then(async (response) => {
-        const data = await response.json().catch(() => null);
-
-        if (response.ok && data?.success) {
-            Toast.fire({
-                icon: 'success',
-                title: data.message || 'Message sent successfully'
-            });
-
-            form.reset();
-            toggleCustomSubject(); // reset UI state
-        } else {
-            throw new Error(data?.message || 'Request failed');
+            if (select.value === 'Other') {
+                customBox.classList.remove('hidden');
+                customInput.setAttribute('required', true);
+            } else {
+                customBox.classList.add('hidden');
+                customInput.removeAttribute('required');
+                customInput.value = '';
+            }
         }
-    })
-    .catch((error) => {
-        console.error(error);
 
-        Toast.fire({
-            icon: 'error',
-            title: 'Failed to send message. Please try again.'
+        /* ----------------------------
+        WHATSAPP SEND
+        -----------------------------*/
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const subjectSelect = document.getElementById('subjectSelect').value;
+            const customSubject = document.getElementById('custom_subject')?.value?.trim();
+
+            let subject = subjectSelect === 'Other' ? customSubject : subjectSelect;
+
+            if (!name || !phone || !email || !message || !subject) {
+                Toast.fire({
+                    icon: 'warning',
+                    title: 'Please complete all required fields'
+                });
+                return;
+            }
+
+            const formattedMessage =
+                `Hello Sehunane Attorneys,%0A%0A` +
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                `*Email:* ${encodeURIComponent(email)}%0A` +
+                `*Subject:* ${encodeURIComponent(subject)}%0A` +
+                `*Message:* ${encodeURIComponent(message)}`;
+
+            const whatsappNumber = "27603561780";
+
+            window.open(
+                `https://wa.me/${whatsappNumber}?text=${formattedMessage}`,
+                '_blank'
+            );
+        }
+
+        /* ----------------------------
+        EMAIL SEND (FIXED)
+        -----------------------------*/
+        function sendToEmail() {
+            const form = document.getElementById('contactForm');
+            const btn = document.getElementById('emailSubmitBtn');
+            const btnText = document.getElementById('btnText');
+
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            const subjectSelect = document.getElementById('subjectSelect').value;
+            const customSubject = document.getElementById('custom_subject')?.value?.trim();
+
+            let finalSubject = subjectSelect === 'Other'
+                ? customSubject
+                : subjectSelect;
+
+            if (!finalSubject) {
+                Toast.fire({
+                    icon: 'warning',
+                    title: 'Please select a subject'
+                });
+                return;
+            }
+
+            // Inject subject into hidden field for Laravel
+            const subjectField = document.getElementById('subject');
+
+        if (!subjectField) {
+            console.error('Hidden subject field is missing in the DOM');
+            return;
+        }
+
+        subjectField.value = finalSubject;
+
+            // UI loading state
+            btn.disabled = true;
+            btnText.innerText = 'Sending...';
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Accept': 'application/json'
+                },
+                body: formData
+            })
+            .then(async (response) => {
+                const data = await response.json().catch(() => null);
+
+                if (response.ok && data?.success) {
+                    Toast.fire({
+                        icon: 'success',
+                        title: data.message || 'Message sent successfully'
+                    });
+
+                    form.reset();
+                    toggleCustomSubject(); // reset UI state
+                } else {
+                    throw new Error(data?.message || 'Request failed');
+                }
+            })
+            .catch((error) => {
+                console.error(error);
+
+                Toast.fire({
+                    icon: 'error',
+                    title: 'Failed to send message. Please try again.'
+                });
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btnText.innerText = 'Send via Email';
+            });
+        }
+
+        //FAQ Accordion logic
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.accordion').forEach(elm => {
+                const button = elm.querySelector('.toggle-button');
+                const content = elm.querySelector('.content');
+                const plusIcon = button.querySelector('.plus');
+
+                button.addEventListener('click', () => {
+                    const isHidden = content.classList.toggle('invisible');
+                    content.style.maxHeight = isHidden ? '0px' : `${content.scrollHeight + 100}px`;
+                    button.classList.toggle('font-semibold', !isHidden);
+                    button.classList.toggle('font-medium', isHidden);
+                    content.classList.toggle('pb-6', !isHidden);
+                    plusIcon.classList.toggle('hidden', !isHidden);
+                    plusIcon.classList.toggle('block', isHidden);
+                });
+            });
         });
-    })
-    .finally(() => {
-        btn.disabled = false;
-        btnText.innerText = 'Send via Email';
-    });
-}
-</script>
+    </script>
 @endpush

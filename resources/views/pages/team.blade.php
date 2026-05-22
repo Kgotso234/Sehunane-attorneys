@@ -113,7 +113,7 @@
                                         alt="Associate Name">
                                 </div>
                                 <div class="p-8 flex flex-col justify-center text-center">
-                                    <h4 class="text-xl font-bold text-black mb-1">[Insert Name]</h4>
+                                    <h4 class="text-xl font-bold text-black mb-1">Cloudia Mokgadi Maleto</h4>
                                     <p class="text-[#bb942f] font-semibold text-sm uppercase tracking-widest mb-4">Legal Associate</p>
                                     <p class="text-slate-500 text-sm leading-relaxed">
                                         Providing expert legal counsel with a focus on client-centered solutions and justice.
