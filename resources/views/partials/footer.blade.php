@@ -35,7 +35,7 @@
                     <li>Labour Law</li>
                     <li>Family Law</li>
                     <li>Divorce Law</li>
-                    <li>Deceased EstatDecease & Estate Planninge</li>
+                    <li>Deceased EstatDecease & Estate Planning</li>
                     <li>Property & Conveyancing</li>
                     <li>Third Party Claims</li>
                 </ul>

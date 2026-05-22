@@ -52,7 +52,7 @@
                         ['name' => 'Our Team', 'path' => '/team'],
                         ['name' => 'Services', 'path' => '#', 'is_dropdown' => true],
                         ['name' => 'Case Studies', 'path' => '/case-studies'],
-                        ['name' => 'Legal Insights', 'path' => '/insights'],
+                        // ['name' => 'Legal Insights', 'path' => '/insights'],
                         ['name' => 'Contact Us', 'path' => '/contact'],
                     ];
                     $currentUrl = rtrim(url()->current(), '/');

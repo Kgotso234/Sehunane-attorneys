@@ -1,9 +1,9 @@
-@extends('layouts.app')
 
-@section('title', 'Legal Insights & Analysis | Sehunane Attorneys Inc')
-@section('meta_description', 'Stay informed with expert legal analysis and updates on South African law. Sehunane Attorneys Inc provides deep insights into Constitutional, Criminal, and Property law.')
 
-@push('styles')
+<?php $__env->startSection('title', 'Legal Insights & Analysis | Sehunane Attorneys Inc'); ?>
+<?php $__env->startSection('meta_description', 'Stay informed with expert legal analysis and updates on South African law. Sehunane Attorneys Inc provides deep insights into Constitutional, Criminal, and Property law.'); ?>
+
+<?php $__env->startPush('styles'); ?>
 <style>
     @keyframes slowZoom {
         0% { transform: scale(1); }
@@ -20,18 +20,18 @@
         overflow: hidden;
     }
 </style>
-@endpush
+<?php $__env->stopPush(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div id="page-skeleton">
-        @include('skeletons.legal')
+        <?php echo $__env->make('skeletons.legal', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
     </div>
 
     <div id="page-content" class="hidden">
         <main class="min-h-screen bg-white">
             <section class="relative h-[400px] flex items-center overflow-hidden">
                 <div class="absolute inset-0">
-                    <img src="{{ asset('images/law-firm-1.jpg') }}" 
+                    <img src="<?php echo e(asset('images/law-firm-1.jpg')); ?>" 
                         alt="Legal Insights" 
                         class="w-full h-full object-cover animate-slow-zoom">
                     <div class="absolute inset-0 bg-gradient-to-r from-[#1a120f] via-[#36251e]/90 to-transparent"></div>
@@ -57,7 +57,7 @@
                 <div class="container mx-auto px-6">
                     <div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
                         <div class="lg:w-1/2 h-[350px] lg:h-auto overflow-hidden">
-                            <img src="{{ asset('images/labour-law.png') }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Featured Insight">
+                            <img src="<?php echo e(asset('images/labour-law.png')); ?>" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Featured Insight">
                         </div>
                         <div class="lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
                             <div class="flex items-center gap-4 mb-6">
@@ -177,4 +177,5 @@
 
         });
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\sehunane Att\resources\views/pages/insights.blade.php ENDPATH**/ ?>
