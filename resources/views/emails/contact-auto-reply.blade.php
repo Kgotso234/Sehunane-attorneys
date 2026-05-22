@@ -1,16 +1,22 @@
 <x-mail::message>
-# Thank you for reaching out to Sehunane Attorneys Inc.
+
+# Thank you for contacting Sehunane Attorneys Inc
 
 Dear {{ $name }},
 
-This email serves as an automated confirmation that we have securely received your legal inquiry regarding **"RE: {{ $subject }}"**.
+We have received your enquiry regarding:
 
-### Your Submission Summary:
-Our consulting staff has queued your message details for legal evaluation. One of our legal professionals or administration specialists will review your submission and follow up with you shortly during standard operational business hours.
+**{{ $subject }}**
 
-If your legal matter requires immediate attention or urgent intervention, please do not hesitate to contact our Kempton Park headquarters directly via our active lines at +27 60 356 1780.
+Our team has received your message and will review it carefully. One of our attorneys or support staff will respond to you within standard business hours.
 
-Kind Regards,  
-**Sehunane Attorneys Inc Team**  
-*Kempton Park Office*
+If your matter is urgent, please contact our office directly:
+
+**Phone:** +27 60 356 1780
+
+We appreciate you reaching out to us.
+
+Kind regards,  
+**Sehunane Attorneys Inc**
+
 </x-mail::message>
