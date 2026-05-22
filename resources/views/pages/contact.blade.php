@@ -60,8 +60,14 @@
                                                 <option value="Criminal Law">Criminal Law</option>
                                                 <option value="Labour Law">Labour Law</option>
                                                 <option value="Property & Conveyancing">Property & Conveyancing</option>
+                                                <option value="Family Law">Family Law</option>
+                                                <option value="Divorce Law">Divorce Law</option>
+                                                <option value="Deceased & Estate Planning">Deceased & Estate Planning</option>
                                                 <option value="Third Party Claims">Third Party Claims</option>
                                                 <option value="Other">Other (Specify)</option>
+                                                
+                    
+                    
                                             </select>
                                         </div>
 
