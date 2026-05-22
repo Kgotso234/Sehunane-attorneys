@@ -13,36 +13,29 @@ class ContactAutoReply extends Mailable
     use Queueable, SerializesModels;
 
     public $name;
-    public $subject;
+    public $subjectLine;
 
-    /**
-     * Create a new message instance.
-     */
     public function __construct($name, $subject)
     {
         $this->name = $name;
-        $this->subject = $subject;
+        $this->subjectLine = $subject;
     }
 
-    /**
-     * Get the message envelope.
-     */
-   public function envelope(): Envelope
+    public function envelope(): Envelope
     {
-        $replySubject = 'RE: ' . ($this->subject ?? 'Legal Inquiry');
-
         return new Envelope(
-            subject: $replySubject,
+            subject: 'RE: ' . ($this->subjectLine ?? 'Legal Inquiry'),
         );
     }
 
-    /**
-     * Get the message content definition.
-     */
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.contact-auto-reply',
+            view: 'emails.contact-auto-reply',
+            with: [
+                'name' => $this->name,
+                'subject' => $this->subjectLine,
+            ],
         );
     }
 }
