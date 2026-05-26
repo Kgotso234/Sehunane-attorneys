@@ -46,7 +46,7 @@
                 <ul class="space-y-3 text-sm">
                     <li class="flex items-start gap-3">
                         <i data-lucide="map-pin" class="h-4 w-4 mt-0.5 flex-shrink-0"></i>
-                        <span class="text-[var(--primary-foreground)]/80">11 Monument Road, Closemore Building Office 302A Second Floor, Kempton Park, Gauteng, 1620</span>
+                        <span class="text-[var(--primary-foreground)]/80">11 Monument Road, Closemore Building, Office 302A Second Floor, Kempton Park, Gauteng, 1619</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i>

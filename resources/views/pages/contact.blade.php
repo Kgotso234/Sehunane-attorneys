@@ -159,7 +159,7 @@
                                                 <p class="text-slate-600 text-sm">11 Monument Road</p>
                                                 <p class="text-slate-600 text-[13px] mt-0.5">Closemore Building, Office 302A Second Floor</p>
                                                 <p class="text-slate-600 text-[13px] mt-0.5">Kempton Park, Gauteng</p>
-                                                <p class="text-slate-600 text-[13px] mt-0.5">1620</p>
+                                                <p class="text-slate-600 text-[13px] mt-0.5">1619</p>
                                                 {{-- <a href="https://maps.app.goo.gl/cuubXDoE71fhpmxm9" target="_blank" class="text-md text-[var(--accent)] hover:underline text-sm mt-2 inline-block">
                                                     Get Directions →
                                                 </a> --}}
