@@ -15,6 +15,8 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.sehunaneattorneys.co.za{{ request()->path() }}">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta property="og:title" content="@yield('title', 'Sehunane Attorneys Inc | Legal Excellence')">
     <meta property="og:description" content="Comprehensive legal solutions in Kempton Park. 100% Black-Owned and committed to justice.">
     <meta property="og:type" content="website">
@@ -87,11 +89,13 @@
     @stack('scripts')
     <script>
         
-        AOS.init({
-            duration: 1000, // Speed of animation (1 second)
-            once: true,     // Animation only happens once (stays visible)
-            offset: 100     // Triggers when element is 100px into view
-          });
+       document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000, // Speed of animation (1 second)
+                once: true,     // Animation only happens once (stays visible)
+                offset: 100     // Triggers when element is 100px into view
+            });
+        });
         lucide.createIcons();
         const openBtn = document.getElementById('openConsultationModal');
         const closeBtn = document.getElementById('closeConsultationModal');
