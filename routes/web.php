@@ -41,7 +41,7 @@ Route::prefix('/services')->group(function () {
     Route::get('/criminal-law', function () { return view('pages.services.criminal'); })->name('services.criminal');
     Route::get('/litigation', function () { return view('pages.services.litigation'); })->name('services.litigation');
     Route::get('/third-party-claims', function () { return view('pages.services.third-party'); })->name('services.third-party');
-    Route::get('/Constitutional-litigation', function () { return view('pages.services.Constitutional'); })->name('services.constitutional');
+    Route::get('/constitutional-litigation', function () { return view('pages.services.constitutional'); })->name('services.constitutional');
     Route::get('/family-law', function () { return view('pages.services.family-law'); })->name('services.family-law');
     Route::get('/decease-estate', function () { return view('pages.services.decease-estate'); })->name('services.decease-estate');
     Route::get('/divorce-law', function () { return view('pages.services.divorce-law'); })->name('services.divorce-law');

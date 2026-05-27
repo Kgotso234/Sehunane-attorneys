@@ -13,7 +13,7 @@
     <meta name="description" content="@yield('meta_description', 'Sehunane Attorneys Inc is a 100% Black-Owned law firm in Kempton Park. We provide comprehensive legal services in Labour, Criminal, Family, and Corporate Law to protect your future.')">
 
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="canonical" href="https://www.sehunaneattorneys.co.za{{ request()->path() }}">
 
     <meta property="og:title" content="@yield('title', 'Sehunane Attorneys Inc | Legal Excellence')">
     <meta property="og:description" content="Comprehensive legal solutions in Kempton Park. 100% Black-Owned and committed to justice.">
