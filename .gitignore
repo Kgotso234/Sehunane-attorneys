@@ -2,3 +2,8 @@
 /node_modules
 /public/storage
 /storage/*.key
+/storage/framework/views
+/storage/framework/cache
+/storage/framework/sessions
+/storage/logs
+/bootstrap/cache
