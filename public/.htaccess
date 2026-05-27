@@ -5,8 +5,15 @@
 
     RewriteEngine On
 
-    # Force HTTPS + WWW (single canonical domain)
-    RewriteCond %{HTTPS} off [OR]
+    # 1. If NOT local, force HTTPS
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1 [NC]
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://www.sehunaneattorneys.co.za/$1 [L,R=301]
+
+    # 2. If NOT local, force WWW prefix
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1 [NC]
     RewriteCond %{HTTP_HOST} ^sehunaneattorneys\.co\.za [NC]
     RewriteRule ^(.*)$ https://www.sehunaneattorneys.co.za/$1 [L,R=301]
 
