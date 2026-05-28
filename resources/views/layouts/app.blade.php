@@ -58,13 +58,16 @@
               "email": "info@sehunaneattorneys.co.za",
               "priceRange": "$$",
               "areaServed": "Kempton Park, Gauteng",
-              "knowsAbout": [ "Labour Law", 
-        "Decease and Estate Planning", 
-        "Divorce Law",
-        "Civil Litigation", 
-        "Criminal Law", 
-        "Family Law", 
-        "Corporate Law" ]
+              "knowsAbout": [ 
+                "Labour Law", 
+                "Decease and Estate Planning", 
+                "Divorce Law",
+                "Civil Litigation", 
+                "Criminal Law", 
+                "Family Law", 
+                "Corporate Law" 
+            ]
+    }
         </script> 
     </head>
         
