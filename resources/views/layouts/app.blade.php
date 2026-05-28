@@ -88,32 +88,39 @@
         <script>
             window.addEventListener('load', function () {
             
-                // =========================
-                // AOS INIT (stable version)
-                // =========================
-                if (window.AOS) {
-                    AOS.init({
-                        duration: 1000,
-                        once: true,
-                        offset: 100
+                const skeleton = document.getElementById('page-skeleton');
+                const content = document.getElementById('page-content');
+            
+                setTimeout(() => {
+            
+                    // 1. Show real content FIRST
+                    skeleton?.classList.add('hidden');
+                    content?.classList.remove('hidden');
+            
+                    // 2. Wait for browser to paint layout
+                    requestAnimationFrame(() => {
+            
+                        // 3. NOW initialize AOS (after content is visible)
+                        if (window.AOS) {
+                            AOS.init({
+                                duration: 1000,
+                                once: true,
+                                offset: 100
+                            });
+            
+                            AOS.refreshHard();
+                        }
+            
+                        // 4. Icons
+                        if (window.lucide) {
+                            lucide.createIcons();
+                        }
+            
                     });
             
-                    // allow layout to fully settle before recalculating positions
-                    setTimeout(() => {
-                        AOS.refreshHard();
-                    }, 800);
-                }
+                }, 700);
             
-                // =========================
-                // Lucide Icons
-                // =========================
-                if (window.lucide) {
-                    lucide.createIcons();
-                }
-            
-                // =========================
-                // Modal Logic
-                // =========================
+                // Modal logic (safe to run immediately)
                 const openBtn = document.getElementById('openConsultationModal');
                 const closeBtn = document.getElementById('closeConsultationModal');
                 const modal = document.getElementById('consultationModal');
