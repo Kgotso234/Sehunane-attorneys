@@ -32,43 +32,44 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         @stack('styles')
-        
-        <script type="application/ld+json">
-            {
-            "@@context": "https://schema.org",
-            "@@type": "LegalService",
-            "name": "Sehunane Attorneys Inc",
-            "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, Divorce, and Corporate law.",
-            "url": "{{ url('/') }}",
-            "logo": "{{ asset('/favicon.png') }}",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "11 Monument Road, 302A Closemore Building, Office 302A Second Floor ",
-                "addressLocality": "Kempton Park",
-                "addressRegion": "Gauteng",
-                "postalCode": "1619",
-                "addressCountry": "South Africa"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "-26.10023",
-                "longitude": "28.23137"
-            },
-            "telephone": "+27603561780",
-            "email": "info@sehunaneattorneys.co.za",
-            "priceRange": "$$",
-            "areaServed": "Kempton Park, Gauteng",
-            "knowsAbout": [ 
-                "Labour Law", 
-                "Decease and Estate Planning", 
-                "Divorce Law",
-                "Civil Litigation", 
-                "Criminal Law", 
-                "Family Law", 
-                "Corporate Law" 
-            ]
-            }
-        </script> 
+        @verbatim
+            <script type="application/ld+json">
+                {
+                "@context": "https://schema.org",
+                "@type": "LegalService",
+                "name": "Sehunane Attorneys Inc",
+                "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, Divorce, and Corporate law.",
+                "url": "{{ url('/') }}",
+                "logo": "{{ asset('/favicon.png') }}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "11 Monument Road, 302A Closemore Building, Office 302A Second Floor ",
+                    "addressLocality": "Kempton Park",
+                    "addressRegion": "Gauteng",
+                    "postalCode": "1619",
+                    "addressCountry": "South Africa"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "-26.10023",
+                    "longitude": "28.23137"
+                },
+                "telephone": "+27603561780",
+                "email": "info@sehunaneattorneys.co.za",
+                "priceRange": "$$",
+                "areaServed": "Kempton Park, Gauteng",
+                "knowsAbout": [ 
+                    "Labour Law", 
+                    "Decease and Estate Planning", 
+                    "Divorce Law",
+                    "Civil Litigation", 
+                    "Criminal Law", 
+                    "Family Law", 
+                    "Corporate Law" 
+                ]
+                }
+            </script> 
+        @endverbatim
         
     </head>
         
