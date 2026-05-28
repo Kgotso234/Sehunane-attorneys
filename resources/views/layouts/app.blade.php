@@ -13,10 +13,7 @@
     <meta name="description" content="@yield('meta_description', 'Sehunane Attorneys Inc is a 100% Black-Owned law firm in Kempton Park. We provide comprehensive legal services in Labour, Criminal, Family, and Corporate Law to protect your future.')">
 
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.sehunaneattorneys.co.za{{ request()->path() }}">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta property="og:title" content="@yield('title', 'Sehunane Attorneys Inc | Legal Excellence')">
     <meta property="og:description" content="Comprehensive legal solutions in Kempton Park. 100% Black-Owned and committed to justice.">
     <meta property="og:type" content="website">
@@ -46,10 +43,10 @@
           "logo": "",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "11 Monument Road, 302A Closemore Building ",
+            "streetAddress": "11 Monument Road, 302A Closemore Building, Office 302A Second Floor ",
             "addressLocality": "Kempton Park",
             "addressRegion": "Gauteng",
-            "postalCode": "1620",
+            "postalCode": "1619",
             "addressCountry": "South Africa"
           },
           "geo": {
@@ -61,9 +58,10 @@
           "email": "info@sehunaneattorneys.co.za",
           "priceRange": "$$",
           "areaServed": "Kempton Park, Gauteng",
-          "knowsAbout": ["Labour Law", "Criminal Law", "Civil Litigation", "Family Law", "Corporate Law"]
+          "knowsAbout": ["Labour Law", "Decease and Estate Planning" , "Divorce Law","Civil Litigation", "Criminal Law", "Civil Litigation", "Family Law", "Corporate Law"]
         }
-    </script>    
+    </script> 
+</head>
     
 <body>
     <div class="flex flex-col min-h-screen">
