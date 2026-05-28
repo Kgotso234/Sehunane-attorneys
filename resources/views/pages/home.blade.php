@@ -339,18 +339,25 @@
         </div>
     </div>
     <script>
-        window.addEventListener('load', () => {
-
-            setTimeout(() => {
-
-                document.getElementById('page-skeleton')
-                    .classList.add('hidden');
-
-                document.getElementById('page-content')
-                    .classList.remove('hidden');
-
-            }, 700);
-
-        });
+            window.addEventListener('load', () => {
+            
+                setTimeout(() => {
+            
+                    document.getElementById('page-skeleton')?.classList.add('hidden');
+                    document.getElementById('page-content')?.classList.remove('hidden');
+            
+                    // IMPORTANT: wait for DOM repaint
+                    requestAnimationFrame(() => {
+            
+                        if (window.AOS) {
+                            AOS.refreshHard(); // THIS is the missing piece
+                        }
+            
+                    });
+            
+                }, 700);
+            
+            });
+    </script>
     </script>
 @endsection
