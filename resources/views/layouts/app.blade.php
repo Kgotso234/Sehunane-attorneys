@@ -35,8 +35,8 @@
         
         <script type="application/ld+json">
             {
-            "@context": "https://schema.org",
-            "@type": "LegalService",
+            "@@context": "https://schema.org",
+            "@@type": "LegalService",
             "name": "Sehunane Attorneys Inc",
             "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, Divorce, and Corporate law.",
             "url": "{{ url('/') }}",
@@ -68,8 +68,8 @@
                 "Corporate Law" 
             ]
             }
-            </script> 
-        @endif
+        </script> 
+        
     </head>
         
     <body>
