@@ -23,7 +23,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="@yield('title', 'Sehunane Attorneys Inc')">
     
-        <link rel="icon" href="/favicon.png">
+        <link rel="icon" type="image/png" href="/favicon.png">
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
