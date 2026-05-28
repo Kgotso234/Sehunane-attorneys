@@ -86,19 +86,34 @@
         
         @stack('scripts')
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
+            window.addEventListener('load', function () {
             
-                // AOS
-                AOS.init({
-                    duration: 1000,
-                    once: true,
-                    offset: 100
-                });
+                // =========================
+                // AOS INIT (stable version)
+                // =========================
+                if (window.AOS) {
+                    AOS.init({
+                        duration: 1000,
+                        once: true,
+                        offset: 100
+                    });
             
-                // Lucide
-                lucide.createIcons();
+                    // allow layout to fully settle before recalculating positions
+                    setTimeout(() => {
+                        AOS.refreshHard();
+                    }, 800);
+                }
             
-                // Modal
+                // =========================
+                // Lucide Icons
+                // =========================
+                if (window.lucide) {
+                    lucide.createIcons();
+                }
+            
+                // =========================
+                // Modal Logic
+                // =========================
                 const openBtn = document.getElementById('openConsultationModal');
                 const closeBtn = document.getElementById('closeConsultationModal');
                 const modal = document.getElementById('consultationModal');
@@ -121,7 +136,7 @@
                 });
             
             });
-    </script>
+            </script>
     </body>
 </html>
 
