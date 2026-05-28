@@ -35,30 +35,30 @@
         
         <script type="application/ld+json">
             {
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              "name": "Sehunane Attorneys Inc",
-              "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, Divorce, and Corporate law.",
-              "url": "{{ url('/') }}",
-              "logo": "{{ asset('/favicon.png') }}",
-              "address": {
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "Sehunane Attorneys Inc",
+            "description": "Full-service law firm in Kempton Park specializing in Labour, Criminal, Family, Divorce, and Corporate law.",
+            "url": "{{ url('/') }}",
+            "logo": "{{ asset('/favicon.png') }}",
+            "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "11 Monument Road, 302A Closemore Building, Office 302A Second Floor ",
                 "addressLocality": "Kempton Park",
                 "addressRegion": "Gauteng",
                 "postalCode": "1619",
                 "addressCountry": "South Africa"
-              },
-              "geo": {
+            },
+            "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": "-26.10023",
                 "longitude": "28.23137"
-              },
-              "telephone": "+27603561780",
-              "email": "info@sehunaneattorneys.co.za",
-              "priceRange": "$$",
-              "areaServed": "Kempton Park, Gauteng",
-              "knowsAbout": [ 
+            },
+            "telephone": "+27603561780",
+            "email": "info@sehunaneattorneys.co.za",
+            "priceRange": "$$",
+            "areaServed": "Kempton Park, Gauteng",
+            "knowsAbout": [ 
                 "Labour Law", 
                 "Decease and Estate Planning", 
                 "Divorce Law",
@@ -67,8 +67,8 @@
                 "Family Law", 
                 "Corporate Law" 
             ]
-    }
-        </script> 
+            }
+            </script> 
     </head>
         
     <body>
