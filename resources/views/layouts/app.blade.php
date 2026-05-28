@@ -86,27 +86,31 @@
     
     @stack('scripts')
     <script>
-        
-       document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 1000, // Speed of animation (1 second)
-                once: true,     // Animation only happens once (stays visible)
-                offset: 100     // Triggers when element is 100px into view
-            });
+    document.addEventListener('DOMContentLoaded', function () {
+    
+        // AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
         });
+    
+        // Lucide
         lucide.createIcons();
+    
+        // Modal
         const openBtn = document.getElementById('openConsultationModal');
         const closeBtn = document.getElementById('closeConsultationModal');
         const modal = document.getElementById('consultationModal');
     
         openBtn?.addEventListener('click', () => {
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            modal?.classList.remove('hidden');
+            modal?.classList.add('flex');
         });
     
         closeBtn?.addEventListener('click', () => {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
+            modal?.classList.add('hidden');
+            modal?.classList.remove('flex');
         });
     
         modal?.addEventListener('click', (e) => {
@@ -115,9 +119,9 @@
                 modal.classList.remove('flex');
             }
         });
-
-
-    </script>
+    
+    });
+</script>
 </body>
 </html>
 
