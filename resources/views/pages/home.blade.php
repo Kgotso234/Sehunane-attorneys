@@ -144,15 +144,18 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 lg:gap-6">
                         @foreach($services as $index => $service)
-                            <div class="{{ $service['span'] }} group relative overflow-hidden rounded-2xl bg-slate-900 min-h-[400px]" 
-                                data-aos="fade-up" 
-                                data-aos-delay="{{ 100 + ($index * 50) }}">
+                            {{-- Wrap the whole card in an anchor tag --}}
+                            <a href="{{ url('/services/' . $service['slug']) }}" 
+                               class="{{ $service['span'] }} block group relative overflow-hidden rounded-2xl bg-slate-900 min-h-[400px] transition-transform duration-300 hover:scale-[1.02]" 
+                               data-aos="fade-up" 
+                               data-aos-delay="{{ 100 + ($index * 50) }}">
                                 
-                                <div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000 opacity-40" 
-                                    style="background-image: url('{{ $service['img'] }}');">
+                                {{-- Background Image (kept animation as requested) --}}
+                                <div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 scale-105 group-hover:scale-110 transition-all duration-1000 opacity-60" 
+                                     style="background-image: url('{{ $service['img'] }}');">
                                 </div>
                                 
-                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
                                 
                                 <div class="relative h-full p-8 flex flex-col justify-end">
                                     <div class="mb-4 p-3 bg-[#bb942f] rounded-lg w-fit transition-transform group-hover:scale-110 duration-500">
@@ -161,19 +164,15 @@
                                     
                                     <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">{{ $service['title'] }}</h3>
                                     
-                                    <p class="text-slate-200 text-sm md:text-base leading-relaxed mb-6 max-w-md opacity-90 group-hover:opacity-100 transition-opacity">
+                                    <p class="text-slate-200 text-sm md:text-base leading-relaxed mb-6 max-w-md">
                                         {{ $service['description'] }}
                                     </p>
                                     
-                                    <div class="flex items-center opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                                        <a href="{{ url('/services/' . $service['slug']) }}" 
-                                        class="flex items-center gap-2 text-[#bb942f] hover:text-white transition-colors text-sm font-bold uppercase tracking-wider">
-                                            Explore Expertise 
-                                            <i data-lucide="arrow-right" class="h-4 w-4"></i>
-                                        </a>
+                                    <div class="flex items-center text-[#bb942f] font-bold uppercase tracking-wider text-sm">
+                                        Explore Expertise <i data-lucide="arrow-right" class="h-4 w-4 ml-2"></i>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
