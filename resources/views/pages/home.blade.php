@@ -52,7 +52,7 @@
                 $services = [
                     [
                         'title' => 'Constitution Litigation',
-                        'slug' => 'Constitutional',
+                        'slug' => 'constitutional-litigation',
                         'icon' => 'building',
                         'description' => 'Expert guidance on constitutional rights, public law disputes, and administrative justice in South Africa.',
                         'img' => 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80',
@@ -60,7 +60,7 @@
                     ],
                     [
                         'title' => 'Commercial Law',
-                        'slug' => 'commercial',
+                        'slug' => 'commercial-law',
                         'icon' => 'briefcase',
                         'description' => 'Strategic legal support for business transactions, drafting agreements, and terms of trade.',
                         'img' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
@@ -76,7 +76,7 @@
                     ],
                     [
                         'title' => 'Criminal Law',
-                        'slug' => 'criminal',
+                        'slug' => 'criminal-law',
                         'icon' => 'gavel',
                         'description' => 'Dedicated criminal defense lawyers in Kempton Park ensuring your rights are upheld at every stage.',
                         'img' => 'https://images.unsplash.com/photo-1589578594224-4bb0124ddcd1?auto=format&fit=crop&w=1200&q=80',
@@ -84,7 +84,7 @@
                     ],
                     [
                         'title' => 'Labour Law',
-                        'slug' => 'labour',
+                        'slug' => 'labour-law',
                         'icon' => 'users',
                         'description' => 'Our signature expertise in CCMA representation and workplace rights.',
                         'img' => 'https://images.unsplash.com/photo-1521791136364-798a730bb361?auto=format&fit=crop&w=1200&q=80',
@@ -116,7 +116,7 @@
                     ],
                     [
                         'title' => 'Property & Conveyancing',
-                        'slug' => 'property',
+                        'slug' => 'property-law',
                         'icon' => 'home',
                         'description' => 'Expert assistance with property transfers and lease agreements.',
                         'img' => 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
@@ -124,7 +124,7 @@
                     ],
                     [
                         'title' => 'Third Party Claims',
-                        'slug' => 'third-party',
+                        'slug' => 'third-party-claim',
                         'icon' => 'briefcase',
                         'description' => 'Specialized legal assistance for RAF claims and personal injury litigation in Gauteng.',
                         'img' => 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80',
