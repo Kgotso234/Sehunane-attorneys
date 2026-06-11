@@ -57,7 +57,7 @@
                     <li class="flex items-center gap-3">
                         <i data-lucide="mail" class="h-4 w-4 flex-shrink-0"></i>
                         <a href="mailto:info@schunaneattorneys.co.za" class="hover:text-[var(--accent)] transition-colors">
-                            info@schunaneattorneys.co.za
+                            info@sehunaneattorneys.co.za
                         </a>
                     </li>
                 </ul>
