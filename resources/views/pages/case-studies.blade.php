@@ -44,12 +44,12 @@
             {{-- Case studies Grid --}}
             <section class="py-5 relative overflow-hidden bg-white">
                 <div class="container mx-auto px-4 relative z-10">
-                    <div class="text-center mb-10">
+                    <!-- <div class="text-center mb-10">
                         <h2 class="heading text-3xl md:text-4xl font-bold text-black inline-block relative pt-5 pb-1">
                             Our Legal Milestones
                         </h2>
                         <div class="heading-line"></div>
-                    </div>
+                    </div> -->
 
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 lg:gap-6">
 
