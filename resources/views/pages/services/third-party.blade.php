@@ -79,7 +79,7 @@
                                 <p class="text-white/70 text-sm mb-8 relative z-10 leading-relaxed">
                                     Injured in an accident? We handle the complexities of RAF and third-party claims so you can focus on your recovery.
                                 </p>
-                                <a href="tel:0603561780" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300 relative z-10">
+                                <a href="tel:+27711968185" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300 relative z-10">
                                     <i data-lucide="check-square" class="w-5 h-5"></i>
                                     Assess Your Claim
                                 </a>
