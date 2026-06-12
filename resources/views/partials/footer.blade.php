@@ -50,15 +50,9 @@
                     </li>
                     <li class="flex items-center gap-3">
                         <i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i>
-                        <a href="tel:+27711968185" class="hover:text-[var(--accent)] transition-colors">
-                            071 196 8185
-                        </a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i>
-                        <a href="tel:+27762733139" class="hover:text-[var(--accent)] transition-colors">
-                            076 273 3139
-                        </a>
+                        <a href="tel:+27711968185" class="hover:text-[var(--accent)] transition-colors">071 196 8185</a>
+                        <span class="opacity-40">/</span>
+                        <a href="tel:+27762733139" class="hover:text-[var(--accent)] transition-colors">076 273 3139</a>
                     </li>
                     <li class="flex items-center gap-3">
                         <i data-lucide="mail" class="h-4 w-4 flex-shrink-0"></i>

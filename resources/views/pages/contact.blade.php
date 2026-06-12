@@ -172,9 +172,9 @@
                                             </svg>
                                             <div>
                                                 <h4 class="font-semibold text-black text-sm mb-2">Phone Number</h4>
-                                                <a href="tel:+27603561780" class="text-slate-600 text-[13px]">
-                                                    +27 (603) 561-780
-                                                </a>
+                                                <a href="tel:+27711968185" class="text-slate-600 text-[13px]">071 196 8185</a>
+                                                <span class="text-slate-400 mx-1">/</span>
+                                                <a href="tel:+27762733139" class="text-slate-600 text-[13px]">076 273 3139</a>
                                             </div>
                                         </div>
                                         <div class="flex items-start space-x-3">

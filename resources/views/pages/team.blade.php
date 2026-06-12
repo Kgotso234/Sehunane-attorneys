@@ -159,10 +159,23 @@
                                 <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                             </a>
                             
-                            <a href="tel:0603561780" class="text-white hover:text-[#bb942f] transition-colors font-medium flex items-center gap-2">
-                                <i data-lucide="phone" class="w-4 h-4"></i>
-                                Or Call Us: 0603561780
-                            </a>
+                            <div class="flex flex-col sm:flex-row items-center gap-4">
+                                <a href="tel:+27711968185" class="text-white hover:text-[#bb942f] transition-colors font-medium flex items-center gap-2 group">
+                                    <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#bb942f] transition-colors">
+                                        <i data-lucide="phone" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>071 196 8185</span>
+                                </a>
+
+                                <span class="text-white/30 hidden sm:block">/</span>
+
+                                <a href="tel:+27762733139" class="text-white hover:text-[#bb942f] transition-colors font-medium flex items-center gap-2 group">
+                                    <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#bb942f] transition-colors">
+                                        <i data-lucide="phone" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>076 273 3139</span>
+                                </a>
+                            </div>
                         </div>
 
                     </div>

@@ -326,9 +326,9 @@
                                 <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                             </a>
                             
-                            <a href="tel:0603561780" class="text-white hover:text-[#bb942f] transition-colors font-medium flex items-center gap-2">
+                            <a href="tel:+27711968185" class="text-white hover:text-[#bb942f] transition-colors font-medium flex items-center gap-2">
                                 <i data-lucide="phone" class="w-4 h-4"></i>
-                                Or Call Us: 060 356 1780
+                                Or Call Us: 071 196 8185
                             </a>
                         </div>
 
