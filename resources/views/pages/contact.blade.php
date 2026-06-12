@@ -214,7 +214,7 @@
                 </div>
             </section>
             {{-- map section --}}
-            <section class="w-full h-[500px]">
+            {{-- <section class="w-full h-[500px]">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!4v1762641861187!6m8!1m7!1smGMT31tkEX559zWKVvlR6A!2m2!1d-26.10304098468086!2d28.23234625263074!3f321.5256585026408!4f-1.614283502728867!5f0.7820865974627469"
                     class="w-full h-full"
@@ -223,7 +223,41 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+            </section> --}}
+            <section class="relative w-full overflow-hidden">
+                <div class="relative h-[500px]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!4v1762641861187!6m8!1m7!1smGMT31tkEX559zWKVvlR6A!2m2!1d-26.10304098468086!2d28.23234625263074!3f321.5256585026408!4f-1.614283502728867!5f0.7820865974627469"
+                        class="w-full h-full grayscale"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    {{-- Info card pinned over the map --}}
+                    <div class="absolute top-6 left-6 bg-white rounded-2xl p-5 shadow-2xl max-w-xs">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-9 h-9 bg-[#bb942f] rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <h3 class="font-bold text-black text-sm">Sehunane Attorneys Inc.</h3>
+                        </div>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-4">
+                            11 Monument Road, Closemore Building,<br>
+                            Office 302A, 2nd Floor,<br>
+                            Kempton Park, Gauteng, 1619
+                        </p>
+                        <a href="https://maps.google.com/?q=11+Monument+Road+Kempton+Park+Gauteng" 
+                        target="_blank"
+                        class="inline-flex items-center gap-2 bg-[#bb942f] text-white font-bold py-2 px-4 rounded-full hover:bg-black transition-colors text-xs w-full justify-center">
+                            <i data-lucide="navigation" class="w-3 h-3"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
             </section>
+
             {{-- FAQ Section --}}
             <section class="py-20 bg-gray-50">
                 <div class="max-w-screen-xl mx-auto p-4">
