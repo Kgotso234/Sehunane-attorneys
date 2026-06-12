@@ -15,14 +15,18 @@
             <div class="hidden lg:flex items-center gap-10 text-[var(--primary-text)]">
                 <div class="flex items-center gap-3">
                     <i data-lucide="phone" class="w-5 h-5"></i>
-                    <span class="font-bold text-lg">0603561780</span>
+                    <a href="tel:+27711968185" class="font-bold text-lg hover:text-[var(--accent)] transition-colors">
+                        071 196 8185
+                    </a>
                 </div>
 
                 <div class="h-6 w-px bg-[var(--primary-text)] opacity-40"></div>
 
                 <div class="flex items-center gap-3">
                     <i data-lucide="mail" class="w-5 h-5"></i>
-                    <span class="font-bold text-lg">info@sehunaneattorneys.co.za</span>
+                    <a href="mailto:info@sehunaneattorneys.co.za" class="font-bold text-lg hover:text-[var(--accent)] transition-colors">
+                        info@sehunaneattorneys.co.za
+                    </a>
                 </div>
             </div>
 

@@ -28,16 +28,16 @@
             <div>
                 <h3 class="font-semibold mb-4">Services</h3>
                 <ul class="space-y-2 text-sm text-[var(--primary-foreground)]/80">
-                    <li>Constitutional Litigation</li>
-                    <li>Commercial Law</li>
-                    <li>Civil Litigation</li>
-                    <li>Criminal Law</li>
-                    <li>Labour Law</li>
-                    <li>Family Law</li>
-                    <li>Divorce Law</li>
-                    <li>Deceased  & Estate Planning</li>
-                    <li>Property & Conveyancing</li>
-                    <li>Third Party Claims</li>
+                    <li><a href="{{ route('services.constitutional') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Constitutional Litigation</a></li>
+                    <li><a href="{{ route('services.commercial') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Commercial Law</a></li>
+                    <li><a href="{{ route('services.litigation') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Civil Litigation</a></li>
+                    <li><a href="{{ route('services.criminal') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Criminal Law</a></li>
+                    <li><a href="{{ route('services.labour') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Labour Law</a></li>
+                    <li><a href="{{ route('services.family-law') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Family Law</a></li>
+                    <li><a href="{{ route('services.divorce-law') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Divorce Law</a></li>
+                    <li><a href="{{ route('services.decease-estate') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Deceased &amp; Estate Planning</a></li>
+                    <li><a href="{{ route('services.property') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Property &amp; Conveyancing</a></li>
+                    <li><a href="{{ route('services.third-party') }}" class="hover:text-[var(--primary-foreground)] transition-colors">Third Party Claims</a></li>
                 </ul>
             </div>
 
@@ -50,13 +50,19 @@
                     </li>
                     <li class="flex items-center gap-3">
                         <i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i>
-                        <a href="tel:+27603561780" class="hover:text-[var(--accent)] transition-colors">
-                            +27 (603) 561-780
+                        <a href="tel:+27711968185" class="hover:text-[var(--accent)] transition-colors">
+                            071 196 8185
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i>
+                        <a href="tel:+27762733139" class="hover:text-[var(--accent)] transition-colors">
+                            076 273 3139
                         </a>
                     </li>
                     <li class="flex items-center gap-3">
                         <i data-lucide="mail" class="h-4 w-4 flex-shrink-0"></i>
-                        <a href="mailto:info@schunaneattorneys.co.za" class="hover:text-[var(--accent)] transition-colors">
+                        <a href="mailto:info@sehunaneattorneys.co.za" class="hover:text-[var(--accent)] transition-colors">
                             info@sehunaneattorneys.co.za
                         </a>
                     </li>

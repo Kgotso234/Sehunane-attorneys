@@ -89,15 +89,15 @@
                                 </div>
                             </div>
                     
-                            {{-- Associate 2: Rakhidi Lucky Seunane --}}
+                            {{-- Associate 2: Mapula Lerato Seunane --}}
                             <div class="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-aos="fade-up" data-aos-delay="200">
                                 <div class="h-64 overflow-hidden">
                                     <img src="{{ asset('images/images.png') }}" 
                                         class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" 
-                                        alt="Rakhidi Lucky Seunane">
+                                        alt="Mapula Lerato Seunane">
                                 </div>
                                 <div class="p-8 flex flex-col justify-center text-center">
-                                    <h4 class="text-xl font-bold text-black mb-1">Rakhidi Lucky Seunane</h4>
+                                    <h4 class="text-xl font-bold text-black mb-1">Mapula Lerato Seunane</h4>
                                     <p class="text-[#bb942f] font-semibold text-sm uppercase tracking-widest mb-4">Office Manager</p>
                                     <p class="text-slate-500 text-sm leading-relaxed">
                                         Driving operational efficiency and administrative excellence across the firm.
