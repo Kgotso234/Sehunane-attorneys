@@ -79,7 +79,7 @@
                                 <p class="text-white/70 text-sm mb-8 relative z-10 leading-relaxed">
                                     From High Court matters to complex claims, we provide the strategic litigation needed to protect your interests and resolve disputes.
                                 </p>
-                                <a href="tel:0603561780" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300 relative z-10">
+                                <a href="tel:+27711968185" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300 relative z-10">
                                     <i data-lucide="balance-scale" class="w-5 h-5"></i>
                                     Discuss Your Case
                                 </a>
@@ -96,7 +96,7 @@
                                         Civil litigation involves legal disputes between individuals or entities seeking compensation or the enforcement of specific rights. At <strong>Sehunane Attorneys Inc</strong>, we recognize that prolonged conflict can be costly and emotionally taxing.
                                     </p>
                                     <p>
-                                        Our approach focuses on resolving disputes efficiently through clear legal advice and meticulous case preparation. We provide expert representation in the **Kempton Park Magistrates’ Court**, as well as the **High Court of South Africa (Johannesburg and Pretoria)**, safeguarding your legal and financial interests with unwavering dedication.
+                                        Our approach focuses on resolving disputes efficiently through clear legal advice and meticulous case preparation. We provide expert representation in the <strong>Kempton Park Magistrates’ Court</strong>, as well as the <strong>High Court of South Africa (Johannesburg and Pretoria)</strong>, safeguarding your legal and financial interests with unwavering dedication.
                                     </p>
                                 </div>
                             </div>

@@ -84,9 +84,9 @@
                                 <p class="text-white/70 text-sm mb-8 relative z-10 leading-relaxed">
                                     Protect your financial independence and personal assets during a divorce. Contact our specialists for a confidential consultation.
                                 </p>
-                                <a href="tel:0603561780" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300">
+                                <a href="tel:+27711968185" class="flex items-center gap-4 bg-[#bb942f] text-black font-bold py-3 px-6 rounded-xl hover:bg-white transition-all duration-300">
                                     <i data-lucide="phone-call" class="w-5 h-5"></i>
-                                    Call 060 356 1780
+                                    Call 071 196 8185
                                 </a>
                             </div>
                         </div>
