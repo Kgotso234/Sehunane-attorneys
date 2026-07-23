@@ -7,6 +7,15 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         
         <meta name="google-site-verification" content="pOnpcic50oFPhvEZE-xBxk4hh8NvkzIYj8LEI4Ex7UE" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8E32ZLKR97"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8E32ZLKR97');
+        </script>
     
         <title>@yield('title', 'Sehunane Attorneys Inc | Full-Service Law Firm in Kempton Park')</title>
     
