@@ -196,7 +196,7 @@
                                     <div class="space-y-4">
                                         <div class="flex justify-between gap-4 flex-wrap">
                                             <span class="text-slate-600 text-sm">Monday - Friday</span>
-                                            <span class="text-slate-900 text-sm">8:00 AM - 4:00 PM</span>
+                                            <span class="text-slate-900 text-sm">8:30 AM - 4:30 PM</span>
                                         </div>
                                         <div class="flex justify-between gap-4 flex-wrap">
                                             <span class="text-slate-600 text-sm">Saturday</span>
